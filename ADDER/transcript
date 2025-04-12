@@ -1,0 +1,134 @@
+# do run.do
+# vsim work.adder_tb 
+# Start time: 15:59:32 on Apr 12,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: adder_sequence.sv(14): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.adder_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.adder_pkg(fast)
+# Loading work.adder_tb(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# ** Warning: (vsim-PLI-3110) $dumpfile : This task can be called only once. Please use $fdumpfile()
+# for multiple files.
+#    Time: 0 ns  Iteration: 0  Process: /adder_tb/#INITIAL#7 File: adder_tb.sv Line: 23
+# UVM_INFO @ 0: reporter [RNTST] Running test adder_test...
+# UVM_INFO adder_driver.sv(26) @ 90: uvm_test_top.env.agent.drv [DRIVER] Reset DONE
+# UVM_INFO adder_sequence.sv(15) @ 90: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 23 b = 9
+# UVM_INFO adder_driver.sv(35) @ 90: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 23 b = 9
+# UVM_INFO adder_monitor.sv(29) @ 130: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 23 b = 9 y = 32
+# UVM_INFO adder_scoreboard.sv(23) @ 130: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 23 b = 9 y = 32
+# UVM_INFO adder_scoreboard.sv(26) @ 130: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 130: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 130: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 19 b = 4
+# UVM_INFO adder_driver.sv(35) @ 130: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 19 b = 4
+# UVM_INFO adder_monitor.sv(29) @ 170: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 19 b = 4 y = 23
+# UVM_INFO adder_scoreboard.sv(23) @ 170: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 19 b = 4 y = 23
+# UVM_INFO adder_scoreboard.sv(26) @ 170: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 170: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 170: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 27 b = 29
+# UVM_INFO adder_driver.sv(35) @ 170: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 27 b = 29
+# UVM_INFO adder_monitor.sv(29) @ 210: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 27 b = 29 y = 56
+# UVM_INFO adder_scoreboard.sv(23) @ 210: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 27 b = 29 y = 56
+# UVM_INFO adder_scoreboard.sv(26) @ 210: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 210: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 210: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 17 b = 31
+# UVM_INFO adder_driver.sv(35) @ 210: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 17 b = 31
+# UVM_INFO adder_monitor.sv(29) @ 250: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 17 b = 31 y = 48
+# UVM_INFO adder_scoreboard.sv(23) @ 250: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 17 b = 31 y = 48
+# UVM_INFO adder_scoreboard.sv(26) @ 250: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 250: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 250: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 3 b = 11
+# UVM_INFO adder_driver.sv(35) @ 250: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 3 b = 11
+# UVM_INFO adder_monitor.sv(29) @ 290: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 3 b = 11 y = 14
+# UVM_INFO adder_scoreboard.sv(23) @ 290: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 3 b = 11 y = 14
+# UVM_INFO adder_scoreboard.sv(26) @ 290: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 290: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 290: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 4 b = 26
+# UVM_INFO adder_driver.sv(35) @ 290: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 4 b = 26
+# UVM_INFO adder_monitor.sv(29) @ 330: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 4 b = 26 y = 30
+# UVM_INFO adder_scoreboard.sv(23) @ 330: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 4 b = 26 y = 30
+# UVM_INFO adder_scoreboard.sv(26) @ 330: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 330: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 330: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 27 b = 26
+# UVM_INFO adder_driver.sv(35) @ 330: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 27 b = 26
+# UVM_INFO adder_monitor.sv(29) @ 370: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 27 b = 26 y = 53
+# UVM_INFO adder_scoreboard.sv(23) @ 370: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 27 b = 26 y = 53
+# UVM_INFO adder_scoreboard.sv(26) @ 370: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 370: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 370: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 28 b = 31
+# UVM_INFO adder_driver.sv(35) @ 370: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 28 b = 31
+# UVM_INFO adder_monitor.sv(29) @ 410: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 28 b = 31 y = 59
+# UVM_INFO adder_scoreboard.sv(23) @ 410: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 28 b = 31 y = 59
+# UVM_INFO adder_scoreboard.sv(26) @ 410: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 410: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 410: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 7 b = 15
+# UVM_INFO adder_driver.sv(35) @ 410: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 7 b = 15
+# UVM_INFO adder_monitor.sv(29) @ 450: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 7 b = 15 y = 22
+# UVM_INFO adder_scoreboard.sv(23) @ 450: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 7 b = 15 y = 22
+# UVM_INFO adder_scoreboard.sv(26) @ 450: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 450: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO adder_sequence.sv(15) @ 450: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 10 b = 17
+# UVM_INFO adder_driver.sv(35) @ 450: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 10 b = 17
+# UVM_INFO adder_monitor.sv(29) @ 490: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCOREBOARD] a = 10 b = 17 y = 27
+# UVM_INFO adder_scoreboard.sv(23) @ 490: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 10 b = 17 y = 27
+# UVM_INFO adder_scoreboard.sv(26) @ 490: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO adder_scoreboard.sv(36) @ 490: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] = 100%
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 490: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   65
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRIVER]    11
+# [MONITOR]    10
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD]    30
+# [SEQUENCE]    10
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 490 ns  Iteration: 54  Instance: /adder_tb
+# End time: 15:59:34 on Apr 12,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 2
