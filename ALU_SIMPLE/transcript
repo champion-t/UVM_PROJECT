@@ -1,0 +1,423 @@
+# do run.do
+# vsim work.alu_tb 
+# Start time: 22:31:01 on Apr 12,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.alu_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.alu_pkg(fast)
+# Loading work.alu_tb(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# ** Warning: (vsim-PLI-3110) $dumpfile : This task can be called only once. Please use $fdumpfile()
+# for multiple files.
+#    Time: 0 ns  Iteration: 0  Process: /alu_tb/#INITIAL#18 File: alu_tb.sv Line: 31
+# UVM_INFO @ 0: reporter [RNTST] Running test alu_test...
+# UVM_INFO alu_driver.sv(39) @ 15: uvm_test_top.env.agent.drv [DRIVER] RESET DONE
+# UVM_INFO alu_sequence.sv(16) @ 15: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 131 b = 237 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 15: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 131 b = 237 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 35: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 131 b = 237 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 35: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 131 b = 237 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 35: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 35: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 35: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 35: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 7 b = 92 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 35: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 7 b = 92 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 55: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 7 b = 92 op_sel = 0010 alu_out = 644 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 55: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 7 b = 92 op_sel = 0010 alu_out = 644 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 55: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 55: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 55: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 55: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 227 b = 148 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 55: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 227 b = 148 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 75: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 227 b = 148 op_sel = 0010 alu_out = 33596 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 75: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 227 b = 148 op_sel = 0010 alu_out = 33596 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 75: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 75: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 75: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 75: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 230 b = 186 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 75: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 230 b = 186 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 95: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 230 b = 186 op_sel = 0010 alu_out = 42780 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 95: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 230 b = 186 op_sel = 0010 alu_out = 42780 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 95: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 95: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 95: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 95: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 187 b = 237 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 95: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 187 b = 237 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 115: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 187 b = 237 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 115: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 187 b = 237 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 115: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 115: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 115: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 115: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 101 b = 237 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 115: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 101 b = 237 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 135: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 101 b = 237 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 135: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 101 b = 237 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 135: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 135: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 135: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 135: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 138 b = 195 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 135: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 138 b = 195 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 155: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 138 b = 195 op_sel = 0001 alu_out = 65479 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 155: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 138 b = 195 op_sel = 0001 alu_out = 65479 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 155: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 155: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 155: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 155: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 206 b = 92 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 155: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 206 b = 92 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 175: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 206 b = 92 op_sel = 0011 alu_out = 2 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 175: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 206 b = 92 op_sel = 0011 alu_out = 2 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 175: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 175: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 175: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 175: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 168 b = 113 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 175: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 168 b = 113 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 195: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 168 b = 113 op_sel = 0011 alu_out = 1 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 195: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 168 b = 113 op_sel = 0011 alu_out = 1 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 195: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 195: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 195: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 195: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 66 b = 48 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 195: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 66 b = 48 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 215: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 66 b = 48 op_sel = 0001 alu_out = 18 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 215: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 66 b = 48 op_sel = 0001 alu_out = 18 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 215: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 215: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 215: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 215: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 200 b = 211 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 215: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 200 b = 211 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 235: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 200 b = 211 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 235: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 200 b = 211 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 235: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 235: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 235: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 235: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 152 b = 211 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 235: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 152 b = 211 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 255: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 152 b = 211 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 255: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 152 b = 211 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 255: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 255: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 255: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 255: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 99 b = 124 op_sel = 0000
+# UVM_INFO alu_driver.sv(26) @ 255: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 99 b = 124 op_sel = 0000
+# UVM_INFO alu_monitor.sv(32) @ 275: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 99 b = 124 op_sel = 0000 alu_out = 223 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 275: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 99 b = 124 op_sel = 0000 alu_out = 223 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 275: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 275: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 275: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 275: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 93 b = 179 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 275: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 93 b = 179 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 295: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 93 b = 179 op_sel = 0001 alu_out = 65450 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 295: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 93 b = 179 op_sel = 0001 alu_out = 65450 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 295: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 295: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 295: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 295: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 193 b = 137 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 295: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 193 b = 137 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 315: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 193 b = 137 op_sel = 0010 alu_out = 26441 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 315: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 193 b = 137 op_sel = 0010 alu_out = 26441 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 315: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 315: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 315: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 315: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 172 b = 112 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 315: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 172 b = 112 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 335: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 172 b = 112 op_sel = 0011 alu_out = 1 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 335: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 172 b = 112 op_sel = 0011 alu_out = 1 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 335: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 335: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 335: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 335: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 163 b = 29 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 335: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 163 b = 29 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 355: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 163 b = 29 op_sel = 0011 alu_out = 5 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 355: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 163 b = 29 op_sel = 0011 alu_out = 5 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 355: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 355: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 355: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 355: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 196 b = 81 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 355: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 196 b = 81 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 375: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 196 b = 81 op_sel = 0001 alu_out = 115 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 375: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 196 b = 81 op_sel = 0001 alu_out = 115 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 375: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 375: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 375: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 375: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 228 b = 119 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 375: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 228 b = 119 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 395: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 228 b = 119 op_sel = 0001 alu_out = 109 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 395: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 228 b = 119 op_sel = 0001 alu_out = 109 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 395: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 395: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 395: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 395: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 32 b = 154 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 395: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 32 b = 154 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 415: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 32 b = 154 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 415: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 32 b = 154 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 415: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 415: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 415: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 415: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 153 b = 223 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 415: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 153 b = 223 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 435: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 153 b = 223 op_sel = 0010 alu_out = 34119 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 435: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 153 b = 223 op_sel = 0010 alu_out = 34119 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 435: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 435: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 435: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 435: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 121 b = 5 op_sel = 0000
+# UVM_INFO alu_driver.sv(26) @ 435: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 121 b = 5 op_sel = 0000
+# UVM_INFO alu_monitor.sv(32) @ 455: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 121 b = 5 op_sel = 0000 alu_out = 126 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 455: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 121 b = 5 op_sel = 0000 alu_out = 126 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 455: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 455: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 455: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 455: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 7 b = 116 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 455: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 7 b = 116 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 475: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 7 b = 116 op_sel = 0001 alu_out = 65427 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 475: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 7 b = 116 op_sel = 0001 alu_out = 65427 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 475: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 475: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 475: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 475: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 253 b = 149 op_sel = 0000
+# UVM_INFO alu_driver.sv(26) @ 475: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 253 b = 149 op_sel = 0000
+# UVM_INFO alu_monitor.sv(32) @ 495: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 253 b = 149 op_sel = 0000 alu_out = 402 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 495: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 253 b = 149 op_sel = 0000 alu_out = 402 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 495: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 495: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 495: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 495: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 123 b = 137 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 495: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 123 b = 137 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 515: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 123 b = 137 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 515: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 123 b = 137 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 515: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 515: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 515: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 515: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 126 b = 100 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 515: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 126 b = 100 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 535: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 126 b = 100 op_sel = 0010 alu_out = 12600 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 535: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 126 b = 100 op_sel = 0010 alu_out = 12600 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 535: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 535: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 535: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 535: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 194 b = 70 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 535: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 194 b = 70 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 555: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 194 b = 70 op_sel = 0011 alu_out = 2 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 555: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 194 b = 70 op_sel = 0011 alu_out = 2 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 555: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 555: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 555: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 555: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 118 b = 240 op_sel = 0000
+# UVM_INFO alu_driver.sv(26) @ 555: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 118 b = 240 op_sel = 0000
+# UVM_INFO alu_monitor.sv(32) @ 575: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 118 b = 240 op_sel = 0000 alu_out = 358 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 575: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 118 b = 240 op_sel = 0000 alu_out = 358 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 575: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 575: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 575: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 575: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 49 b = 4 op_sel = 0000
+# UVM_INFO alu_driver.sv(26) @ 575: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 49 b = 4 op_sel = 0000
+# UVM_INFO alu_monitor.sv(32) @ 595: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 49 b = 4 op_sel = 0000 alu_out = 53 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 595: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 49 b = 4 op_sel = 0000 alu_out = 53 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 595: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 595: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 595: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 595: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 128 b = 207 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 595: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 128 b = 207 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 615: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 128 b = 207 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 615: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 128 b = 207 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 615: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 615: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 615: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 615: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 181 b = 100 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 615: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 181 b = 100 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 635: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 181 b = 100 op_sel = 0001 alu_out = 81 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 635: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 181 b = 100 op_sel = 0001 alu_out = 81 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 635: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 635: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 635: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 635: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 175 b = 70 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 635: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 175 b = 70 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 655: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 175 b = 70 op_sel = 0001 alu_out = 105 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 655: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 175 b = 70 op_sel = 0001 alu_out = 105 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 655: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 655: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 655: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 655: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 163 b = 173 op_sel = 0000
+# UVM_INFO alu_driver.sv(26) @ 655: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 163 b = 173 op_sel = 0000
+# UVM_INFO alu_monitor.sv(32) @ 675: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 163 b = 173 op_sel = 0000 alu_out = 336 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 675: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 163 b = 173 op_sel = 0000 alu_out = 336 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 675: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 675: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 675: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 675: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 158 b = 206 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 675: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 158 b = 206 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 695: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 158 b = 206 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 695: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 158 b = 206 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 695: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 695: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 695: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 695: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 27 b = 195 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 695: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 27 b = 195 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 715: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 27 b = 195 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 715: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 27 b = 195 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 715: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 715: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 715: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 715: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 70 b = 106 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 715: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 70 b = 106 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 735: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 70 b = 106 op_sel = 0010 alu_out = 7420 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 735: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 70 b = 106 op_sel = 0010 alu_out = 7420 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 735: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 735: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 735: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 735: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 43 b = 177 op_sel = 0000
+# UVM_INFO alu_driver.sv(26) @ 735: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 43 b = 177 op_sel = 0000
+# UVM_INFO alu_monitor.sv(32) @ 755: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 43 b = 177 op_sel = 0000 alu_out = 220 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 755: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 43 b = 177 op_sel = 0000 alu_out = 220 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 755: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 755: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 755: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 755: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 66 b = 74 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 755: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 66 b = 74 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 775: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 66 b = 74 op_sel = 0010 alu_out = 4884 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 775: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 66 b = 74 op_sel = 0010 alu_out = 4884 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 775: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 775: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 775: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 775: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 142 b = 193 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 775: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 142 b = 193 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 795: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 142 b = 193 op_sel = 0001 alu_out = 65485 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 795: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 142 b = 193 op_sel = 0001 alu_out = 65485 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 795: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 795: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 795: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 795: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 39 b = 46 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 795: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 39 b = 46 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 815: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 39 b = 46 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 815: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 39 b = 46 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 815: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 815: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 815: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 815: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 50 b = 195 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 815: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 50 b = 195 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 835: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 50 b = 195 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 835: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 50 b = 195 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 835: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 835: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 835: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 835: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 85 b = 61 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 835: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 85 b = 61 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 855: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 85 b = 61 op_sel = 0010 alu_out = 5185 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 855: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 85 b = 61 op_sel = 0010 alu_out = 5185 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 855: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 855: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 855: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 855: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 189 b = 49 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 855: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 189 b = 49 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 875: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 189 b = 49 op_sel = 0010 alu_out = 9261 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 875: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 189 b = 49 op_sel = 0010 alu_out = 9261 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 875: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 875: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 875: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 875: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 66 b = 105 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 875: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 66 b = 105 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 895: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 66 b = 105 op_sel = 0001 alu_out = 65497 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 895: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 66 b = 105 op_sel = 0001 alu_out = 65497 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 895: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 895: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 895: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 895: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 117 b = 2 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 895: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 117 b = 2 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 915: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 117 b = 2 op_sel = 0001 alu_out = 115 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 915: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 117 b = 2 op_sel = 0001 alu_out = 115 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 915: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 915: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 915: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 915: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 5 b = 168 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 915: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 5 b = 168 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 935: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 5 b = 168 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 935: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 5 b = 168 op_sel = 0011 alu_out = 0 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 935: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 935: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 935: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 935: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 117 b = 145 op_sel = 0011
+# UVM_INFO alu_driver.sv(26) @ 935: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 117 b = 145 op_sel = 0011
+# UVM_INFO alu_monitor.sv(32) @ 955: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 117 b = 145 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 955: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 117 b = 145 op_sel = 0011 alu_out = 0 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 955: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 955: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 955: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 955: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 224 b = 250 op_sel = 0010
+# UVM_INFO alu_driver.sv(26) @ 955: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 224 b = 250 op_sel = 0010
+# UVM_INFO alu_monitor.sv(32) @ 975: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 224 b = 250 op_sel = 0010 alu_out = 56000 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(30) @ 975: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 224 b = 250 op_sel = 0010 alu_out = 56000 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 975: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 975: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 975: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 975: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 127 b = 95 op_sel = 0000
+# UVM_INFO alu_driver.sv(26) @ 975: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 127 b = 95 op_sel = 0000
+# UVM_INFO alu_monitor.sv(32) @ 995: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 127 b = 95 op_sel = 0000 alu_out = 222 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(30) @ 995: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 127 b = 95 op_sel = 0000 alu_out = 222 carry_out = 0
+# UVM_INFO alu_scoreboard.sv(50) @ 995: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 995: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 995: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# UVM_INFO alu_sequence.sv(16) @ 995: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 112 b = 157 op_sel = 0001
+# UVM_INFO alu_driver.sv(26) @ 995: uvm_test_top.env.agent.drv [DRIVER] Trigger DUT a = 112 b = 157 op_sel = 0001
+# UVM_INFO alu_monitor.sv(32) @ 1015: uvm_test_top.env.agent.mon [MONITOR] Data send to [SCORBOARD] a = 112 b = 157 op_sel = 0001 alu_out = 65491 carry_out = 1
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1015: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO alu_scoreboard.sv(30) @ 1015: uvm_test_top.env.scb [SCOREBOARD] Data received from [MONITOR] a = 112 b = 157 op_sel = 0001 alu_out = 65491 carry_out = 1
+# UVM_INFO alu_scoreboard.sv(50) @ 1015: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(61) @ 1015: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO alu_scoreboard.sv(71) @ 1015: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY] 100
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  355
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRIVER]    51
+# [MONITOR]    50
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD]   200
+# [SEQUENCE]    50
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1015 ns  Iteration: 54  Instance: /alu_tb
+# End time: 22:31:02 on Apr 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
