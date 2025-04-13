@@ -1,7 +1,7 @@
 # do run.do
-# vsim work.alu_tb 
-# Start time: 22:31:01 on Apr 12,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim -voptargs=""+acc"" work.alu_tb 
+# Start time: 23:31:21 on Apr 13,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # //  Questa Sim-64
 # //  Version 10.7c win64 Aug 18 2018
 # //
@@ -21,6 +21,8 @@
 # Loading mtiUvm.uvm_pkg
 # Loading work.alu_pkg(fast)
 # Loading work.alu_tb(fast)
+# Loading work.alu_if(fast)
+# Loading work.alu(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
 # Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
 # ----------------------------------------------------------------
@@ -47,7 +49,7 @@
 # UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
 # ** Warning: (vsim-PLI-3110) $dumpfile : This task can be called only once. Please use $fdumpfile()
 # for multiple files.
-#    Time: 0 ns  Iteration: 0  Process: /alu_tb/#INITIAL#18 File: alu_tb.sv Line: 31
+#    Time: 0 ns  Iteration: 0  Process: /alu_tb/#INITIAL#18,30 File: alu_tb.sv Line: 31
 # UVM_INFO @ 0: reporter [RNTST] Running test alu_test...
 # UVM_INFO alu_driver.sv(39) @ 15: uvm_test_top.env.agent.drv [DRIVER] RESET DONE
 # UVM_INFO alu_sequence.sv(16) @ 15: uvm_test_top.env.agent.seqr@@seq [SEQUENCE] Data send to [DRIVER] a = 131 b = 237 op_sel = 0011
@@ -419,5 +421,5 @@
 # [TEST_DONE]     1
 # ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 1015 ns  Iteration: 54  Instance: /alu_tb
-# End time: 22:31:02 on Apr 12,2025, Elapsed time: 0:00:01
+# End time: 23:31:23 on Apr 13,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1
