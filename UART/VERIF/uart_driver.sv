@@ -18,15 +18,15 @@ class uart_driver extends uvm_driver #(uart_sequence_item);
     endfunction
 
     task reset_dut();
-        vif.rstn = 1'b0;
-        vif.tx_start = 1'b0;
-        vif.rx_start = 1'b0;
-        vif.tx_data = 8'h00;
-        vif.baud = 17'h0;
-        vif.length = 4'h0;
-        vif.parity_en = 1'b0;
-        vif.parity_type = 1'b0;
-        vif.stop = 1'b0;
+        vif.rstn        <=  1'b0;
+        vif.tx_start    <=  1'b0;
+        vif.rx_start    <=  1'b0;
+        vif.tx_data     <=  8'h00;
+        vif.baud        <=  17'h0;
+        vif.length      <=  4'h0;
+        vif.parity_en   <=  1'b0;
+        vif.parity_type <=  1'b0;
+        vif.stop        <=  1'b0;
         `uvm_info("DRIVER", "SYSTEM RESET : Start of Simulation", UVM_NONE)
         @(posedge vif.clk);
     endtask
