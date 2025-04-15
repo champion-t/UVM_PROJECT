@@ -1,0 +1,682 @@
+# do run.do
+# vsim -voptargs=""+acc"" work.uart_tb 
+# Start time: 14:18:29 on Apr 15,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.uart_pkg(fast)
+# Loading work.uart_tb(fast)
+# Loading work.uart_if(fast)
+# Loading work.uart_top(fast)
+# Loading work.uart_clk(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# ** Warning: (vsim-PLI-3110) $dumpfile : This task can be called only once. Please use $fdumpfile()
+# for multiple files.
+#    Time: 0 ns  Iteration: 0  Process: /uart_tb/#INITIAL#26,37 File: uart_tb.sv Line: 38
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_test...
+# UVM_INFO uart_driver.sv(30) @ 0: uvm_test_top.env.agent.drv [DRIVER] SYSTEM RESET : Start of Simulation
+# UVM_INFO uart_monitor.sv(27) @ 10: uvm_test_top.env.agent.mon [MONITOR] SYSTEM RESET DETECTED
+# UVM_INFO uart_scoreboard.sv(44) @ 10: uvm_test_top.env.scb [SCOREBOARD] BAUD=x LENGTH=x PARITY_EN=x PARITY_TYPE=x STOP=x TX_DATA=xxxxxxxx RX_DATA=xxxxxxxx
+# UVM_INFO uart_scoreboard.sv(46) @ 10: uvm_test_top.env.scb [SCOREBOARD] SYSTEM RESET
+# UVM_INFO uart_scoreboard.sv(60) @ 10: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: x%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 10: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=00101011 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 61590: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=00101011 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 61590: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=00101011 RX_DATA=00001011
+# UVM_INFO uart_scoreboard.sv(50) @ 61590: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 61590: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 61590: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=01011000 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 173910: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=01011000 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 173910: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=01011000 RX_DATA=01011000
+# UVM_INFO uart_scoreboard.sv(50) @ 173910: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 173910: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 173910: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=01011111 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 260850: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=01011111 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 260850: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=01011111 RX_DATA=00011111
+# UVM_INFO uart_scoreboard.sv(50) @ 260850: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 260850: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 260850: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=01111001 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 373710: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=01111001 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 373710: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=01111001 RX_DATA=01111001
+# UVM_INFO uart_scoreboard.sv(50) @ 373710: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 373710: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 373710: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=01100100 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 469290: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=01100100 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 469290: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=01100100 RX_DATA=00100100
+# UVM_INFO uart_scoreboard.sv(50) @ 469290: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 469290: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 469290: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=11111000 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 582150: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=11111000 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 582150: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=11111000 RX_DATA=11111000
+# UVM_INFO uart_scoreboard.sv(50) @ 582150: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 582150: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 582150: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10000100 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 677730: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10000100 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 677730: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=10000100 RX_DATA=00000100
+# UVM_INFO uart_scoreboard.sv(50) @ 677730: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 677730: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 677730: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=01001010 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 790050: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=01001010 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 790050: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=01001010 RX_DATA=01001010
+# UVM_INFO uart_scoreboard.sv(50) @ 790050: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 790050: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 790050: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10110101 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 876990: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10110101 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 876990: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=10110101 RX_DATA=00110101
+# UVM_INFO uart_scoreboard.sv(50) @ 876990: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 876990: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 876990: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=01110001 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 963930: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=01110001 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 963930: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=01110001 RX_DATA=00010001
+# UVM_INFO uart_scoreboard.sv(50) @ 963930: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 963930: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 963930: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=00001000 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 1068150: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=00001000 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1068150: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=00001000 RX_DATA=00001000
+# UVM_INFO uart_scoreboard.sv(50) @ 1068150: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1068150: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1068150: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=01001010 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 1163730: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=01001010 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1163730: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=01001010 RX_DATA=01001010
+# UVM_INFO uart_scoreboard.sv(50) @ 1163730: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1163730: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1163730: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=11000000 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 1250670: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=11000000 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1250670: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=11000000 RX_DATA=00000000
+# UVM_INFO uart_scoreboard.sv(50) @ 1250670: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1250670: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1250670: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=01010101 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 1354350: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=01010101 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1354350: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=01010101 RX_DATA=01010101
+# UVM_INFO uart_scoreboard.sv(50) @ 1354350: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1354350: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1354350: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=01101000 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 1449930: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=01101000 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1449930: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=01101000 RX_DATA=01101000
+# UVM_INFO uart_scoreboard.sv(50) @ 1449930: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1449930: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1449930: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10110111 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 1545510: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10110111 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1545510: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=10110111 RX_DATA=00110111
+# UVM_INFO uart_scoreboard.sv(50) @ 1545510: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1545510: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1545510: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=01101111 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 1632450: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=01101111 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1632450: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=01101111 RX_DATA=00001111
+# UVM_INFO uart_scoreboard.sv(50) @ 1632450: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1632450: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1632450: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=01111101 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 1745310: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=01111101 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1745310: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=01111101 RX_DATA=01111101
+# UVM_INFO uart_scoreboard.sv(50) @ 1745310: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1745310: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1745310: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10001110 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 1840890: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10001110 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1840890: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=10001110 RX_DATA=00001110
+# UVM_INFO uart_scoreboard.sv(50) @ 1840890: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1840890: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1840890: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=01100110 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 1944570: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=01100110 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 1944570: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=01100110 RX_DATA=01100110
+# UVM_INFO uart_scoreboard.sv(50) @ 1944570: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 1944570: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 1944570: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=00001101 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 2022870: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=00001101 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2022870: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=00001101 RX_DATA=00001101
+# UVM_INFO uart_scoreboard.sv(50) @ 2022870: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2022870: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2022870: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=10100010 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 2135730: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=10100010 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2135730: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=10100010 RX_DATA=10100010
+# UVM_INFO uart_scoreboard.sv(50) @ 2135730: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2135730: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2135730: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=00000100 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 2257230: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=00000100 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2257230: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=00000100 RX_DATA=00000100
+# UVM_INFO uart_scoreboard.sv(50) @ 2257230: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2257230: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2257230: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=10010100 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 2378730: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=10010100 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2378730: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=10010100 RX_DATA=10010100
+# UVM_INFO uart_scoreboard.sv(50) @ 2378730: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2378730: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2378730: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=00111011 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 2482950: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=00111011 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2482950: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=00111011 RX_DATA=00111011
+# UVM_INFO uart_scoreboard.sv(50) @ 2482950: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2482950: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2482950: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=01111001 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 2587170: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=01111001 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2587170: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=01111001 RX_DATA=01111001
+# UVM_INFO uart_scoreboard.sv(50) @ 2587170: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2587170: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2587170: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=00100001 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 2691390: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=00100001 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2691390: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=00100001 RX_DATA=00100001
+# UVM_INFO uart_scoreboard.sv(50) @ 2691390: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2691390: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2691390: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10010010 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 2778330: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10010010 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2778330: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=10010010 RX_DATA=00010010
+# UVM_INFO uart_scoreboard.sv(50) @ 2778330: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2778330: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2778330: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10100111 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 2882010: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10100111 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2882010: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=10100111 RX_DATA=00100111
+# UVM_INFO uart_scoreboard.sv(50) @ 2882010: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2882010: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2882010: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10001010 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 2977590: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10001010 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 2977590: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=10001010 RX_DATA=00001010
+# UVM_INFO uart_scoreboard.sv(50) @ 2977590: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 2977590: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 2977590: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11110100 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 3073170: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11110100 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3073170: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=11110100 RX_DATA=00110100
+# UVM_INFO uart_scoreboard.sv(50) @ 3073170: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3073170: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3073170: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10111001 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 3160110: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10111001 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3160110: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=10111001 RX_DATA=00011001
+# UVM_INFO uart_scoreboard.sv(50) @ 3160110: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3160110: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3160110: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=11110010 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 3247050: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=11110010 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3247050: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=11110010 RX_DATA=00010010
+# UVM_INFO uart_scoreboard.sv(50) @ 3247050: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3247050: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3247050: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10000110 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 3342090: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10000110 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3342090: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=10000110 RX_DATA=00000110
+# UVM_INFO uart_scoreboard.sv(50) @ 3342090: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3342090: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3342090: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=11010101 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 3454950: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=11010101 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3454950: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=11010101 RX_DATA=11010101
+# UVM_INFO uart_scoreboard.sv(50) @ 3454950: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3454950: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3454950: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=11000110 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 3559170: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=11000110 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3559170: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=11000110 RX_DATA=01000110
+# UVM_INFO uart_scoreboard.sv(50) @ 3559170: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3559170: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3559170: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=00100110 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 3680670: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=00100110 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3680670: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=00100110 RX_DATA=00100110
+# UVM_INFO uart_scoreboard.sv(50) @ 3680670: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3680670: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3680670: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11100101 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 3776250: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11100101 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3776250: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=11100101 RX_DATA=00100101
+# UVM_INFO uart_scoreboard.sv(50) @ 3776250: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3776250: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3776250: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11100110 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 3871830: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11100110 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3871830: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=11100110 RX_DATA=00100110
+# UVM_INFO uart_scoreboard.sv(50) @ 3871830: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3871830: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3871830: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=01110101 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 3967410: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=01110101 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 3967410: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=01110101 RX_DATA=01110101
+# UVM_INFO uart_scoreboard.sv(50) @ 3967410: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 3967410: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 3967410: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10000111 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 4071630: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10000111 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4071630: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=10000111 RX_DATA=00000111
+# UVM_INFO uart_scoreboard.sv(50) @ 4071630: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4071630: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4071630: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10001110 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 4158030: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10001110 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4158030: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=10001110 RX_DATA=00001110
+# UVM_INFO uart_scoreboard.sv(50) @ 4158030: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4158030: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4158030: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=00011001 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 4262250: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=00011001 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4262250: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=00011001 RX_DATA=00011001
+# UVM_INFO uart_scoreboard.sv(50) @ 4262250: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4262250: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4262250: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=11101101 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 4383750: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=11101101 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4383750: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=11101101 RX_DATA=11101101
+# UVM_INFO uart_scoreboard.sv(50) @ 4383750: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4383750: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4383750: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=00010000 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 4487970: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=00010000 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4487970: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=00010000 RX_DATA=00010000
+# UVM_INFO uart_scoreboard.sv(50) @ 4487970: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4487970: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4487970: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=00111000 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 4592190: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=00111000 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4592190: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=00111000 RX_DATA=00111000
+# UVM_INFO uart_scoreboard.sv(50) @ 4592190: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4592190: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4592190: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=01010101 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 4687770: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=01010101 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4687770: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=01010101 RX_DATA=01010101
+# UVM_INFO uart_scoreboard.sv(50) @ 4687770: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4687770: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4687770: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=00000001 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 4774710: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=00000001 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4774710: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=00000001 RX_DATA=00000001
+# UVM_INFO uart_scoreboard.sv(50) @ 4774710: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4774710: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4774710: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=00010000 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 4878390: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=00010000 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4878390: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=00010000 RX_DATA=00010000
+# UVM_INFO uart_scoreboard.sv(50) @ 4878390: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4878390: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4878390: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=01000100 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 4965330: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=01000100 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 4965330: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=01000100 RX_DATA=00000100
+# UVM_INFO uart_scoreboard.sv(50) @ 4965330: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 4965330: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 4965330: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=01000011 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 5078190: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=01000011 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5078190: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=01000011 RX_DATA=01000011
+# UVM_INFO uart_scoreboard.sv(50) @ 5078190: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5078190: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5078190: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=00101111 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 5182410: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=00101111 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5182410: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=00101111 RX_DATA=00101111
+# UVM_INFO uart_scoreboard.sv(50) @ 5182410: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5182410: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5182410: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10011000 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 5277990: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10011000 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5277990: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=10011000 RX_DATA=00011000
+# UVM_INFO uart_scoreboard.sv(50) @ 5277990: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5277990: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5277990: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=11011101 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 5373570: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=11011101 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5373570: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=11011101 RX_DATA=01011101
+# UVM_INFO uart_scoreboard.sv(50) @ 5373570: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5373570: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5373570: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=11110010 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 5469150: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=11110010 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5469150: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=11110010 RX_DATA=01110010
+# UVM_INFO uart_scoreboard.sv(50) @ 5469150: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5469150: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5469150: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=11101101 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 5581470: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=11101101 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5581470: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=11101101 RX_DATA=01101101
+# UVM_INFO uart_scoreboard.sv(50) @ 5581470: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5581470: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5581470: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10111110 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 5685690: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10111110 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5685690: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=10111110 RX_DATA=00111110
+# UVM_INFO uart_scoreboard.sv(50) @ 5685690: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5685690: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5685690: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11100100 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 5781270: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11100100 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5781270: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=11100100 RX_DATA=00100100
+# UVM_INFO uart_scoreboard.sv(50) @ 5781270: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5781270: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5781270: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=10000010 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 5885490: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=10000010 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5885490: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=10000010 RX_DATA=00000010
+# UVM_INFO uart_scoreboard.sv(50) @ 5885490: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5885490: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5885490: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=01111101 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 5972430: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=01111101 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 5972430: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=01111101 RX_DATA=00011101
+# UVM_INFO uart_scoreboard.sv(50) @ 5972430: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 5972430: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 5972430: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=01010101 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 6093930: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=01010101 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6093930: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=01010101 RX_DATA=01010101
+# UVM_INFO uart_scoreboard.sv(50) @ 6093930: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6093930: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6093930: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=00001110 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 6206790: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=00001110 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6206790: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=00001110 RX_DATA=00001110
+# UVM_INFO uart_scoreboard.sv(50) @ 6206790: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6206790: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6206790: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=11100000 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 6311010: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=11100000 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6311010: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=11100000 RX_DATA=11100000
+# UVM_INFO uart_scoreboard.sv(50) @ 6311010: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6311010: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6311010: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=01111011 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 6415230: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=01111011 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6415230: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=01111011 RX_DATA=00111011
+# UVM_INFO uart_scoreboard.sv(50) @ 6415230: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6415230: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6415230: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10011010 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 6510270: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10011010 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6510270: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=10011010 RX_DATA=00011010
+# UVM_INFO uart_scoreboard.sv(50) @ 6510270: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6510270: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6510270: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=11011101 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 6597210: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=11011101 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6597210: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=11011101 RX_DATA=00011101
+# UVM_INFO uart_scoreboard.sv(50) @ 6597210: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6597210: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6597210: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10011000 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 6692790: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10011000 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6692790: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=10011000 RX_DATA=00011000
+# UVM_INFO uart_scoreboard.sv(50) @ 6692790: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6692790: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6692790: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10101011 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 6788370: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10101011 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6788370: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=10101011 RX_DATA=00001011
+# UVM_INFO uart_scoreboard.sv(50) @ 6788370: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6788370: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6788370: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=11101001 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 6892590: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=11101001 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6892590: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=11101001 RX_DATA=11101001
+# UVM_INFO uart_scoreboard.sv(50) @ 6892590: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6892590: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6892590: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=00101001 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 6987630: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=00101001 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 6987630: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=00101001 RX_DATA=00001001
+# UVM_INFO uart_scoreboard.sv(50) @ 6987630: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 6987630: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 6987630: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=00111111 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 7091850: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=00111111 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7091850: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=00111111 RX_DATA=00111111
+# UVM_INFO uart_scoreboard.sv(50) @ 7091850: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7091850: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7091850: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10111110 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 7178790: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10111110 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7178790: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=10111110 RX_DATA=00011110
+# UVM_INFO uart_scoreboard.sv(50) @ 7178790: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7178790: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7178790: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=01010010 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 7283010: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=01010010 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7283010: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=01010010 RX_DATA=01010010
+# UVM_INFO uart_scoreboard.sv(50) @ 7283010: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7283010: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7283010: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=11001110 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 7378590: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=11001110 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7378590: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=11001110 RX_DATA=00001110
+# UVM_INFO uart_scoreboard.sv(50) @ 7378590: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7378590: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7378590: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=11101001 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 7482810: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=11101001 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7482810: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=11101001 RX_DATA=01101001
+# UVM_INFO uart_scoreboard.sv(50) @ 7482810: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7482810: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7482810: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=01000011 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 7561110: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=01000011 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7561110: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=01000011 RX_DATA=00000011
+# UVM_INFO uart_scoreboard.sv(50) @ 7561110: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7561110: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7561110: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=11110101 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 7647510: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=11110101 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7647510: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=11110101 RX_DATA=00010101
+# UVM_INFO uart_scoreboard.sv(50) @ 7647510: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7647510: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7647510: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11101000 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 7751730: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11101000 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7751730: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=11101000 RX_DATA=00101000
+# UVM_INFO uart_scoreboard.sv(50) @ 7751730: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7751730: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7751730: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11110100 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 7838670: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11110100 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7838670: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=11110100 RX_DATA=00110100
+# UVM_INFO uart_scoreboard.sv(50) @ 7838670: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7838670: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7838670: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11010100 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 7934250: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11010100 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 7934250: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=11010100 RX_DATA=00010100
+# UVM_INFO uart_scoreboard.sv(50) @ 7934250: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 7934250: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 7934250: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=00110101 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 8046570: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=00110101 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8046570: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=00110101 RX_DATA=00110101
+# UVM_INFO uart_scoreboard.sv(50) @ 8046570: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8046570: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8046570: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=10000111 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 8159430: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=10000111 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8159430: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=10000111 RX_DATA=00000111
+# UVM_INFO uart_scoreboard.sv(50) @ 8159430: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8159430: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8159430: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=11101110 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 8255010: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=11101110 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8255010: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=11101110 RX_DATA=01101110
+# UVM_INFO uart_scoreboard.sv(50) @ 8255010: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8255010: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8255010: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10001011 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 8333310: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10001011 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8333310: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=10001011 RX_DATA=00001011
+# UVM_INFO uart_scoreboard.sv(50) @ 8333310: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8333310: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8333310: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10000010 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 8420250: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10000010 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8420250: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=10000010 RX_DATA=00000010
+# UVM_INFO uart_scoreboard.sv(50) @ 8420250: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8420250: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8420250: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11111100 PARITY_EN=0 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 8507190: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11111100 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8507190: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=0 STOP=0 TX_DATA=11111100 RX_DATA=00111100
+# UVM_INFO uart_scoreboard.sv(50) @ 8507190: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8507190: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8507190: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10001010 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 8593590: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10001010 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8593590: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=10001010 RX_DATA=00001010
+# UVM_INFO uart_scoreboard.sv(50) @ 8593590: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8593590: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8593590: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10100001 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 8689170: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10100001 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8689170: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=10100001 RX_DATA=00000001
+# UVM_INFO uart_scoreboard.sv(50) @ 8689170: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8689170: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8689170: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10110001 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 8776110: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10110001 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8776110: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=10110001 RX_DATA=00010001
+# UVM_INFO uart_scoreboard.sv(50) @ 8776110: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8776110: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8776110: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11101110 PARITY_EN=1 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 8880330: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11101110 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8880330: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=1 STOP=1 TX_DATA=11101110 RX_DATA=00101110
+# UVM_INFO uart_scoreboard.sv(50) @ 8880330: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8880330: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8880330: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=11011111 PARITY_EN=1 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 8984010: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=11011111 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 8984010: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=1 PARITY_TYPE=1 STOP=0 TX_DATA=11011111 RX_DATA=01011111
+# UVM_INFO uart_scoreboard.sv(50) @ 8984010: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 8984010: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 8984010: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=10001001 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 9070950: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=10001001 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9070950: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=10001001 RX_DATA=00001001
+# UVM_INFO uart_scoreboard.sv(50) @ 9070950: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9070950: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 9070950: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=11010010 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 9157890: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=11010010 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9157890: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=11010010 RX_DATA=00010010
+# UVM_INFO uart_scoreboard.sv(50) @ 9157890: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9157890: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 9157890: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=00110110 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 9262110: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=00110110 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9262110: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=00110110 RX_DATA=00110110
+# UVM_INFO uart_scoreboard.sv(50) @ 9262110: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9262110: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 9262110: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=7 TX_DATA=01001100 PARITY_EN=0 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 9366330: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=7 TX_DATA=01001100 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9366330: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=7 PARITY_EN=0 PARITY_TYPE=0 STOP=1 TX_DATA=01001100 RX_DATA=01001100
+# UVM_INFO uart_scoreboard.sv(50) @ 9366330: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9366330: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 9366330: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=10111110 PARITY_EN=0 PARITY_TYPE=1 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 9461910: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=10111110 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9461910: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=0 PARITY_TYPE=1 STOP=1 TX_DATA=10111110 RX_DATA=00111110
+# UVM_INFO uart_scoreboard.sv(50) @ 9461910: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9461910: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 9461910: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=6 TX_DATA=00100001 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 9556950: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=6 TX_DATA=00100001 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9556950: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=6 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=00100001 RX_DATA=00100001
+# UVM_INFO uart_scoreboard.sv(50) @ 9556950: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9556950: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 9556950: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=8 TX_DATA=11100010 PARITY_EN=1 PARITY_TYPE=0 STOP=1
+# UVM_INFO uart_monitor.sv(45) @ 9678450: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=8 TX_DATA=11100010 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9678450: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=8 PARITY_EN=1 PARITY_TYPE=0 STOP=1 TX_DATA=11100010 RX_DATA=11100010
+# UVM_INFO uart_scoreboard.sv(50) @ 9678450: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9678450: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 9678450: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=00001100 PARITY_EN=1 PARITY_TYPE=0 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 9765390: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=00001100 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9765390: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=1 PARITY_TYPE=0 STOP=0 TX_DATA=00001100 RX_DATA=00001100
+# UVM_INFO uart_scoreboard.sv(50) @ 9765390: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9765390: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO uart_driver.sv(47) @ 9765390: uvm_test_top.env.agent.drv [DRIVER] BAUD=115200 LENGTH=5 TX_DATA=00000101 PARITY_EN=0 PARITY_TYPE=1 STOP=0
+# UVM_INFO uart_monitor.sv(45) @ 9843690: uvm_test_top.env.agent.mon [MONITOR] BAUD=115200 LENGTH=5 TX_DATA=00000101 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_ERROR=0 RX_ERROR=0
+# UVM_INFO uart_scoreboard.sv(44) @ 9843690: uvm_test_top.env.scb [SCOREBOARD] BAUD=115200 LENGTH=5 PARITY_EN=0 PARITY_TYPE=1 STOP=0 TX_DATA=00000101 RX_DATA=00000101
+# UVM_INFO uart_scoreboard.sv(50) @ 9843690: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED
+# UVM_INFO uart_scoreboard.sv(60) @ 9843690: uvm_test_top.env.scb [SCOREBOARD] [ACCURACY]: 100%
+# -------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 9843710: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  509
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRIVER]   101
+# [MONITOR]   101
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD]   303
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 9843710 ns  Iteration: 54  Instance: /uart_tb
+# End time: 14:18:33 on Apr 15,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
