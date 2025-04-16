@@ -1,0 +1,1359 @@
+# do run.do
+# vsim -voptargs=""+acc"" work.i2c_tb 
+# Start time: 12:05:14 on Apr 16,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.i2c_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.i2c_pkg(fast)
+# Loading work.i2c_tb(fast)
+# Loading work.i2c_if(fast)
+# Loading work.i2c(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# ** Warning: (vsim-PLI-3110) $dumpfile : This task can be called only once. Please use $fdumpfile()
+# for multiple files.
+#    Time: 0 ns  Iteration: 0  Process: /i2c_tb/#INITIAL#18,29 File: i2c_tb.sv Line: 30
+# UVM_INFO @ 0: reporter [RNTST] Running test i2c_test...
+# UVM_INFO i2c_sequence.sv(15) @ 0: uvm_test_top.seqr.agent.seqr@@seq_reset [SEQUENCE] [MODE: RESET]
+# UVM_INFO i2c_driver.sv(41) @ 0: uvm_test_top.seqr.agent.drv [DRIVER] SYSTEM RESET
+# UVM_INFO i2c_monitor.sv(27) @ 10: uvm_test_top.seqr.agent.mon [MONITOR] SYSTEM RESET DETECTED
+# UVM_INFO i2c_scoreboard.sv(35) @ 10: uvm_test_top.seqr.scb [SCOREBOARD] SYSTEM RESET
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 10: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 67, DIN = 36
+# UVM_INFO i2c_driver.sv(50) @ 10: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 67, DIN = 36
+# UVM_INFO i2c_monitor.sv(38) @ 550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 67, DIN = 36
+# UVM_INFO i2c_scoreboard.sv(40) @ 550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 67, DIN = 36, MEM_DATA_WR = 36
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 110, DIN = 52
+# UVM_INFO i2c_driver.sv(50) @ 550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 110, DIN = 52
+# UVM_INFO i2c_monitor.sv(38) @ 1050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 110, DIN = 52
+# UVM_INFO i2c_scoreboard.sv(40) @ 1050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 110, DIN = 52, MEM_DATA_WR = 52
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 1050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 115, DIN = 182
+# UVM_INFO i2c_driver.sv(50) @ 1050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 115, DIN = 182
+# UVM_INFO i2c_monitor.sv(38) @ 1550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 115, DIN = 182
+# UVM_INFO i2c_scoreboard.sv(40) @ 1550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 115, DIN = 182, MEM_DATA_WR = 182
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 1550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 94, DIN = 35
+# UVM_INFO i2c_driver.sv(50) @ 1550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 94, DIN = 35
+# UVM_INFO i2c_monitor.sv(38) @ 2050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 94, DIN = 35
+# UVM_INFO i2c_scoreboard.sv(40) @ 2050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 94, DIN = 35, MEM_DATA_WR = 35
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 2050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 47, DIN = 230
+# UVM_INFO i2c_driver.sv(50) @ 2050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 47, DIN = 230
+# UVM_INFO i2c_monitor.sv(38) @ 2550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 47, DIN = 230
+# UVM_INFO i2c_scoreboard.sv(40) @ 2550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 47, DIN = 230, MEM_DATA_WR = 230
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 2550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 86, DIN = 107
+# UVM_INFO i2c_driver.sv(50) @ 2550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 86, DIN = 107
+# UVM_INFO i2c_monitor.sv(38) @ 3050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 86, DIN = 107
+# UVM_INFO i2c_scoreboard.sv(40) @ 3050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 86, DIN = 107, MEM_DATA_WR = 107
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 3050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 118, DIN = 217
+# UVM_INFO i2c_driver.sv(50) @ 3050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 118, DIN = 217
+# UVM_INFO i2c_monitor.sv(38) @ 3550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 118, DIN = 217
+# UVM_INFO i2c_scoreboard.sv(40) @ 3550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 118, DIN = 217, MEM_DATA_WR = 217
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 3550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 84, DIN = 187
+# UVM_INFO i2c_driver.sv(50) @ 3550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 84, DIN = 187
+# UVM_INFO i2c_monitor.sv(38) @ 4050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 84, DIN = 187
+# UVM_INFO i2c_scoreboard.sv(40) @ 4050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 84, DIN = 187, MEM_DATA_WR = 187
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 4050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 57, DIN = 216
+# UVM_INFO i2c_driver.sv(50) @ 4050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 57, DIN = 216
+# UVM_INFO i2c_monitor.sv(38) @ 4550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 57, DIN = 216
+# UVM_INFO i2c_scoreboard.sv(40) @ 4550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 57, DIN = 216, MEM_DATA_WR = 216
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 4550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 103, DIN = 183
+# UVM_INFO i2c_driver.sv(50) @ 4550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 103, DIN = 183
+# UVM_INFO i2c_monitor.sv(38) @ 5050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 103, DIN = 183
+# UVM_INFO i2c_scoreboard.sv(40) @ 5050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 103, DIN = 183, MEM_DATA_WR = 183
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 5050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 89, DIN = 128
+# UVM_INFO i2c_driver.sv(50) @ 5050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 89, DIN = 128
+# UVM_INFO i2c_monitor.sv(38) @ 5550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 89, DIN = 128
+# UVM_INFO i2c_scoreboard.sv(40) @ 5550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 89, DIN = 128, MEM_DATA_WR = 128
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 5550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 127, DIN = 126
+# UVM_INFO i2c_driver.sv(50) @ 5550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 127, DIN = 126
+# UVM_INFO i2c_monitor.sv(38) @ 6050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 127, DIN = 126
+# UVM_INFO i2c_scoreboard.sv(40) @ 6050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 127, DIN = 126, MEM_DATA_WR = 126
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 6050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 96, DIN = 3
+# UVM_INFO i2c_driver.sv(50) @ 6050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 96, DIN = 3
+# UVM_INFO i2c_monitor.sv(38) @ 6550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 96, DIN = 3
+# UVM_INFO i2c_scoreboard.sv(40) @ 6550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 96, DIN = 3, MEM_DATA_WR = 3
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 6550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 86, DIN = 145
+# UVM_INFO i2c_driver.sv(50) @ 6550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 86, DIN = 145
+# UVM_INFO i2c_monitor.sv(38) @ 7050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 86, DIN = 145
+# UVM_INFO i2c_scoreboard.sv(40) @ 7050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 86, DIN = 145, MEM_DATA_WR = 145
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 7050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 85, DIN = 166
+# UVM_INFO i2c_driver.sv(50) @ 7050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 85, DIN = 166
+# UVM_INFO i2c_monitor.sv(38) @ 7550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 85, DIN = 166
+# UVM_INFO i2c_scoreboard.sv(40) @ 7550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 85, DIN = 166, MEM_DATA_WR = 166
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 7550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 30, DIN = 28
+# UVM_INFO i2c_driver.sv(50) @ 7550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 30, DIN = 28
+# UVM_INFO i2c_monitor.sv(38) @ 8050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 30, DIN = 28
+# UVM_INFO i2c_scoreboard.sv(40) @ 8050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 30, DIN = 28, MEM_DATA_WR = 28
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 8050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 22, DIN = 87
+# UVM_INFO i2c_driver.sv(50) @ 8050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 22, DIN = 87
+# UVM_INFO i2c_monitor.sv(38) @ 8550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 22, DIN = 87
+# UVM_INFO i2c_scoreboard.sv(40) @ 8550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 22, DIN = 87, MEM_DATA_WR = 87
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 8550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 103, DIN = 54
+# UVM_INFO i2c_driver.sv(50) @ 8550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 103, DIN = 54
+# UVM_INFO i2c_monitor.sv(38) @ 9050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 103, DIN = 54
+# UVM_INFO i2c_scoreboard.sv(40) @ 9050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 103, DIN = 54, MEM_DATA_WR = 54
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 9050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 85, DIN = 209
+# UVM_INFO i2c_driver.sv(50) @ 9050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 85, DIN = 209
+# UVM_INFO i2c_monitor.sv(38) @ 9550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 85, DIN = 209
+# UVM_INFO i2c_scoreboard.sv(40) @ 9550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 85, DIN = 209, MEM_DATA_WR = 209
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 9550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 1, DIN = 41
+# UVM_INFO i2c_driver.sv(50) @ 9550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 1, DIN = 41
+# UVM_INFO i2c_monitor.sv(38) @ 10050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 1, DIN = 41
+# UVM_INFO i2c_scoreboard.sv(40) @ 10050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 1, DIN = 41, MEM_DATA_WR = 41
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 10050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 103, DIN = 71
+# UVM_INFO i2c_driver.sv(50) @ 10050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 103, DIN = 71
+# UVM_INFO i2c_monitor.sv(38) @ 10550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 103, DIN = 71
+# UVM_INFO i2c_scoreboard.sv(40) @ 10550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 103, DIN = 71, MEM_DATA_WR = 71
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 10550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 8, DIN = 101
+# UVM_INFO i2c_driver.sv(50) @ 10550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 8, DIN = 101
+# UVM_INFO i2c_monitor.sv(38) @ 11050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 8, DIN = 101
+# UVM_INFO i2c_scoreboard.sv(40) @ 11050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 8, DIN = 101, MEM_DATA_WR = 101
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 11050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 15, DIN = 255
+# UVM_INFO i2c_driver.sv(50) @ 11050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 15, DIN = 255
+# UVM_INFO i2c_monitor.sv(38) @ 11550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 15, DIN = 255
+# UVM_INFO i2c_scoreboard.sv(40) @ 11550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 15, DIN = 255, MEM_DATA_WR = 255
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 11550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 71, DIN = 194
+# UVM_INFO i2c_driver.sv(50) @ 11550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 71, DIN = 194
+# UVM_INFO i2c_monitor.sv(38) @ 12050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 71, DIN = 194
+# UVM_INFO i2c_scoreboard.sv(40) @ 12050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 71, DIN = 194, MEM_DATA_WR = 194
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 12050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 32, DIN = 124
+# UVM_INFO i2c_driver.sv(50) @ 12050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 32, DIN = 124
+# UVM_INFO i2c_monitor.sv(38) @ 12550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 32, DIN = 124
+# UVM_INFO i2c_scoreboard.sv(40) @ 12550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 32, DIN = 124, MEM_DATA_WR = 124
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 12550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 86, DIN = 67
+# UVM_INFO i2c_driver.sv(50) @ 12550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 86, DIN = 67
+# UVM_INFO i2c_monitor.sv(38) @ 13050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 86, DIN = 67
+# UVM_INFO i2c_scoreboard.sv(40) @ 13050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 86, DIN = 67, MEM_DATA_WR = 67
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 13050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 53, DIN = 212
+# UVM_INFO i2c_driver.sv(50) @ 13050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 53, DIN = 212
+# UVM_INFO i2c_monitor.sv(38) @ 13550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 53, DIN = 212
+# UVM_INFO i2c_scoreboard.sv(40) @ 13550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 53, DIN = 212, MEM_DATA_WR = 212
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 13550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 53, DIN = 122
+# UVM_INFO i2c_driver.sv(50) @ 13550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 53, DIN = 122
+# UVM_INFO i2c_monitor.sv(38) @ 14050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 53, DIN = 122
+# UVM_INFO i2c_scoreboard.sv(40) @ 14050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 53, DIN = 122, MEM_DATA_WR = 122
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 14050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 109, DIN = 101
+# UVM_INFO i2c_driver.sv(50) @ 14050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 109, DIN = 101
+# UVM_INFO i2c_monitor.sv(38) @ 14550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 109, DIN = 101
+# UVM_INFO i2c_scoreboard.sv(40) @ 14550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 109, DIN = 101, MEM_DATA_WR = 101
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 14550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 93, DIN = 138
+# UVM_INFO i2c_driver.sv(50) @ 14550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 93, DIN = 138
+# UVM_INFO i2c_monitor.sv(38) @ 15050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 93, DIN = 138
+# UVM_INFO i2c_scoreboard.sv(40) @ 15050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 93, DIN = 138, MEM_DATA_WR = 138
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 15050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 125, DIN = 218
+# UVM_INFO i2c_driver.sv(50) @ 15050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 125, DIN = 218
+# UVM_INFO i2c_monitor.sv(38) @ 15550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 125, DIN = 218
+# UVM_INFO i2c_scoreboard.sv(40) @ 15550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 125, DIN = 218, MEM_DATA_WR = 218
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 15550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 107, DIN = 9
+# UVM_INFO i2c_driver.sv(50) @ 15550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 107, DIN = 9
+# UVM_INFO i2c_monitor.sv(38) @ 16050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 107, DIN = 9
+# UVM_INFO i2c_scoreboard.sv(40) @ 16050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 107, DIN = 9, MEM_DATA_WR = 9
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 16050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 94, DIN = 250
+# UVM_INFO i2c_driver.sv(50) @ 16050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 94, DIN = 250
+# UVM_INFO i2c_monitor.sv(38) @ 16550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 94, DIN = 250
+# UVM_INFO i2c_scoreboard.sv(40) @ 16550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 94, DIN = 250, MEM_DATA_WR = 250
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 16550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 23, DIN = 202
+# UVM_INFO i2c_driver.sv(50) @ 16550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 23, DIN = 202
+# UVM_INFO i2c_monitor.sv(38) @ 17050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 23, DIN = 202
+# UVM_INFO i2c_scoreboard.sv(40) @ 17050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 23, DIN = 202, MEM_DATA_WR = 202
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 17050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 8, DIN = 29
+# UVM_INFO i2c_driver.sv(50) @ 17050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 8, DIN = 29
+# UVM_INFO i2c_monitor.sv(38) @ 17550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 8, DIN = 29
+# UVM_INFO i2c_scoreboard.sv(40) @ 17550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 8, DIN = 29, MEM_DATA_WR = 29
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 17550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 71, DIN = 124
+# UVM_INFO i2c_driver.sv(50) @ 17550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 71, DIN = 124
+# UVM_INFO i2c_monitor.sv(38) @ 18050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 71, DIN = 124
+# UVM_INFO i2c_scoreboard.sv(40) @ 18050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 71, DIN = 124, MEM_DATA_WR = 124
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 18050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 110, DIN = 72
+# UVM_INFO i2c_driver.sv(50) @ 18050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 110, DIN = 72
+# UVM_INFO i2c_monitor.sv(38) @ 18550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 110, DIN = 72
+# UVM_INFO i2c_scoreboard.sv(40) @ 18550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 110, DIN = 72, MEM_DATA_WR = 72
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 18550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 107, DIN = 108
+# UVM_INFO i2c_driver.sv(50) @ 18550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 107, DIN = 108
+# UVM_INFO i2c_monitor.sv(38) @ 19050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 107, DIN = 108
+# UVM_INFO i2c_scoreboard.sv(40) @ 19050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 107, DIN = 108, MEM_DATA_WR = 108
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 19050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 39, DIN = 74
+# UVM_INFO i2c_driver.sv(50) @ 19050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 39, DIN = 74
+# UVM_INFO i2c_monitor.sv(38) @ 19550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 39, DIN = 74
+# UVM_INFO i2c_scoreboard.sv(40) @ 19550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 39, DIN = 74, MEM_DATA_WR = 74
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 19550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 92, DIN = 156
+# UVM_INFO i2c_driver.sv(50) @ 19550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 92, DIN = 156
+# UVM_INFO i2c_monitor.sv(38) @ 20050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 92, DIN = 156
+# UVM_INFO i2c_scoreboard.sv(40) @ 20050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 92, DIN = 156, MEM_DATA_WR = 156
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 20050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 55, DIN = 116
+# UVM_INFO i2c_driver.sv(50) @ 20050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 55, DIN = 116
+# UVM_INFO i2c_monitor.sv(38) @ 20550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 55, DIN = 116
+# UVM_INFO i2c_scoreboard.sv(40) @ 20550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 55, DIN = 116, MEM_DATA_WR = 116
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 20550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 109, DIN = 12
+# UVM_INFO i2c_driver.sv(50) @ 20550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 109, DIN = 12
+# UVM_INFO i2c_monitor.sv(38) @ 21050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 109, DIN = 12
+# UVM_INFO i2c_scoreboard.sv(40) @ 21050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 109, DIN = 12, MEM_DATA_WR = 12
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 21050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 107, DIN = 176
+# UVM_INFO i2c_driver.sv(50) @ 21050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 107, DIN = 176
+# UVM_INFO i2c_monitor.sv(38) @ 21550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 107, DIN = 176
+# UVM_INFO i2c_scoreboard.sv(40) @ 21550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 107, DIN = 176, MEM_DATA_WR = 176
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 21550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 116, DIN = 3
+# UVM_INFO i2c_driver.sv(50) @ 21550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 116, DIN = 3
+# UVM_INFO i2c_monitor.sv(38) @ 22050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 116, DIN = 3
+# UVM_INFO i2c_scoreboard.sv(40) @ 22050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 116, DIN = 3, MEM_DATA_WR = 3
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 22050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 93, DIN = 199
+# UVM_INFO i2c_driver.sv(50) @ 22050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 93, DIN = 199
+# UVM_INFO i2c_monitor.sv(38) @ 22550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 93, DIN = 199
+# UVM_INFO i2c_scoreboard.sv(40) @ 22550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 93, DIN = 199, MEM_DATA_WR = 199
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 22550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 31, DIN = 78
+# UVM_INFO i2c_driver.sv(50) @ 22550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 31, DIN = 78
+# UVM_INFO i2c_monitor.sv(38) @ 23050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 31, DIN = 78
+# UVM_INFO i2c_scoreboard.sv(40) @ 23050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 31, DIN = 78, MEM_DATA_WR = 78
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 23050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 115, DIN = 46
+# UVM_INFO i2c_driver.sv(50) @ 23050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 115, DIN = 46
+# UVM_INFO i2c_monitor.sv(38) @ 23550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 115, DIN = 46
+# UVM_INFO i2c_scoreboard.sv(40) @ 23550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 115, DIN = 46, MEM_DATA_WR = 46
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 23550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 112, DIN = 161
+# UVM_INFO i2c_driver.sv(50) @ 23550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 112, DIN = 161
+# UVM_INFO i2c_monitor.sv(38) @ 24050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 112, DIN = 161
+# UVM_INFO i2c_scoreboard.sv(40) @ 24050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 112, DIN = 161, MEM_DATA_WR = 161
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 24050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 51, DIN = 10
+# UVM_INFO i2c_driver.sv(50) @ 24050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 51, DIN = 10
+# UVM_INFO i2c_monitor.sv(38) @ 24550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 51, DIN = 10
+# UVM_INFO i2c_scoreboard.sv(40) @ 24550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 51, DIN = 10, MEM_DATA_WR = 10
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 24550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 10, DIN = 31
+# UVM_INFO i2c_driver.sv(50) @ 24550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 10, DIN = 31
+# UVM_INFO i2c_monitor.sv(38) @ 25050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 10, DIN = 31
+# UVM_INFO i2c_scoreboard.sv(40) @ 25050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 10, DIN = 31, MEM_DATA_WR = 31
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 25050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 12, DIN = 164
+# UVM_INFO i2c_driver.sv(50) @ 25050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 12, DIN = 164
+# UVM_INFO i2c_monitor.sv(38) @ 25550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 12, DIN = 164
+# UVM_INFO i2c_scoreboard.sv(40) @ 25550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 12, DIN = 164, MEM_DATA_WR = 164
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 25550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 26, DIN = 172
+# UVM_INFO i2c_driver.sv(50) @ 25550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 26, DIN = 172
+# UVM_INFO i2c_monitor.sv(38) @ 26050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 26, DIN = 172
+# UVM_INFO i2c_scoreboard.sv(40) @ 26050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 26, DIN = 172, MEM_DATA_WR = 172
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 26050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 59, DIN = 147
+# UVM_INFO i2c_driver.sv(50) @ 26050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 59, DIN = 147
+# UVM_INFO i2c_monitor.sv(38) @ 26550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 59, DIN = 147
+# UVM_INFO i2c_scoreboard.sv(40) @ 26550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 59, DIN = 147, MEM_DATA_WR = 147
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 26550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 67, DIN = 93
+# UVM_INFO i2c_driver.sv(50) @ 26550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 67, DIN = 93
+# UVM_INFO i2c_monitor.sv(38) @ 27050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 67, DIN = 93
+# UVM_INFO i2c_scoreboard.sv(40) @ 27050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 67, DIN = 93, MEM_DATA_WR = 93
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 27050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 3, DIN = 122
+# UVM_INFO i2c_driver.sv(50) @ 27050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 3, DIN = 122
+# UVM_INFO i2c_monitor.sv(38) @ 27550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 3, DIN = 122
+# UVM_INFO i2c_scoreboard.sv(40) @ 27550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 3, DIN = 122, MEM_DATA_WR = 122
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 27550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 61, DIN = 151
+# UVM_INFO i2c_driver.sv(50) @ 27550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 61, DIN = 151
+# UVM_INFO i2c_monitor.sv(38) @ 28050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 61, DIN = 151
+# UVM_INFO i2c_scoreboard.sv(40) @ 28050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 61, DIN = 151, MEM_DATA_WR = 151
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 28050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 112, DIN = 139
+# UVM_INFO i2c_driver.sv(50) @ 28050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 112, DIN = 139
+# UVM_INFO i2c_monitor.sv(38) @ 28550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 112, DIN = 139
+# UVM_INFO i2c_scoreboard.sv(40) @ 28550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 112, DIN = 139, MEM_DATA_WR = 139
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 28550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 97, DIN = 81
+# UVM_INFO i2c_driver.sv(50) @ 28550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 97, DIN = 81
+# UVM_INFO i2c_monitor.sv(38) @ 29050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 97, DIN = 81
+# UVM_INFO i2c_scoreboard.sv(40) @ 29050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 97, DIN = 81, MEM_DATA_WR = 81
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 29050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 93, DIN = 56
+# UVM_INFO i2c_driver.sv(50) @ 29050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 93, DIN = 56
+# UVM_INFO i2c_monitor.sv(38) @ 29550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 93, DIN = 56
+# UVM_INFO i2c_scoreboard.sv(40) @ 29550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 93, DIN = 56, MEM_DATA_WR = 56
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 29550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 29, DIN = 39
+# UVM_INFO i2c_driver.sv(50) @ 29550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 29, DIN = 39
+# UVM_INFO i2c_monitor.sv(38) @ 30050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 29, DIN = 39
+# UVM_INFO i2c_scoreboard.sv(40) @ 30050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 29, DIN = 39, MEM_DATA_WR = 39
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 30050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 73, DIN = 153
+# UVM_INFO i2c_driver.sv(50) @ 30050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 73, DIN = 153
+# UVM_INFO i2c_monitor.sv(38) @ 30550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 73, DIN = 153
+# UVM_INFO i2c_scoreboard.sv(40) @ 30550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 73, DIN = 153, MEM_DATA_WR = 153
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 30550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 94, DIN = 5
+# UVM_INFO i2c_driver.sv(50) @ 30550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 94, DIN = 5
+# UVM_INFO i2c_monitor.sv(38) @ 31050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 94, DIN = 5
+# UVM_INFO i2c_scoreboard.sv(40) @ 31050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 94, DIN = 5, MEM_DATA_WR = 5
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 31050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 104, DIN = 81
+# UVM_INFO i2c_driver.sv(50) @ 31050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 104, DIN = 81
+# UVM_INFO i2c_monitor.sv(38) @ 31550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 104, DIN = 81
+# UVM_INFO i2c_scoreboard.sv(40) @ 31550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 104, DIN = 81, MEM_DATA_WR = 81
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 31550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 2, DIN = 223
+# UVM_INFO i2c_driver.sv(50) @ 31550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 2, DIN = 223
+# UVM_INFO i2c_monitor.sv(38) @ 32050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 2, DIN = 223
+# UVM_INFO i2c_scoreboard.sv(40) @ 32050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 2, DIN = 223, MEM_DATA_WR = 223
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 32050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 74, DIN = 59
+# UVM_INFO i2c_driver.sv(50) @ 32050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 74, DIN = 59
+# UVM_INFO i2c_monitor.sv(38) @ 32550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 74, DIN = 59
+# UVM_INFO i2c_scoreboard.sv(40) @ 32550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 74, DIN = 59, MEM_DATA_WR = 59
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 32550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 47, DIN = 187
+# UVM_INFO i2c_driver.sv(50) @ 32550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 47, DIN = 187
+# UVM_INFO i2c_monitor.sv(38) @ 33050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 47, DIN = 187
+# UVM_INFO i2c_scoreboard.sv(40) @ 33050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 47, DIN = 187, MEM_DATA_WR = 187
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 33050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 116, DIN = 34
+# UVM_INFO i2c_driver.sv(50) @ 33050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 116, DIN = 34
+# UVM_INFO i2c_monitor.sv(38) @ 33550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 116, DIN = 34
+# UVM_INFO i2c_scoreboard.sv(40) @ 33550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 116, DIN = 34, MEM_DATA_WR = 34
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 33550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 49, DIN = 186
+# UVM_INFO i2c_driver.sv(50) @ 33550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 49, DIN = 186
+# UVM_INFO i2c_monitor.sv(38) @ 34050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 49, DIN = 186
+# UVM_INFO i2c_scoreboard.sv(40) @ 34050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 49, DIN = 186, MEM_DATA_WR = 186
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 34050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 107, DIN = 87
+# UVM_INFO i2c_driver.sv(50) @ 34050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 107, DIN = 87
+# UVM_INFO i2c_monitor.sv(38) @ 34550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 107, DIN = 87
+# UVM_INFO i2c_scoreboard.sv(40) @ 34550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 107, DIN = 87, MEM_DATA_WR = 87
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 34550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 66, DIN = 144
+# UVM_INFO i2c_driver.sv(50) @ 34550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 66, DIN = 144
+# UVM_INFO i2c_monitor.sv(38) @ 35050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 66, DIN = 144
+# UVM_INFO i2c_scoreboard.sv(40) @ 35050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 66, DIN = 144, MEM_DATA_WR = 144
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 35050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 93, DIN = 91
+# UVM_INFO i2c_driver.sv(50) @ 35050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 93, DIN = 91
+# UVM_INFO i2c_monitor.sv(38) @ 35550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 93, DIN = 91
+# UVM_INFO i2c_scoreboard.sv(40) @ 35550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 93, DIN = 91, MEM_DATA_WR = 91
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 35550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 82, DIN = 252
+# UVM_INFO i2c_driver.sv(50) @ 35550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 82, DIN = 252
+# UVM_INFO i2c_monitor.sv(38) @ 36050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 82, DIN = 252
+# UVM_INFO i2c_scoreboard.sv(40) @ 36050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 82, DIN = 252, MEM_DATA_WR = 252
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 36050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 64, DIN = 155
+# UVM_INFO i2c_driver.sv(50) @ 36050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 64, DIN = 155
+# UVM_INFO i2c_monitor.sv(38) @ 36550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 64, DIN = 155
+# UVM_INFO i2c_scoreboard.sv(40) @ 36550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 64, DIN = 155, MEM_DATA_WR = 155
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 36550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 127, DIN = 12
+# UVM_INFO i2c_driver.sv(50) @ 36550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 127, DIN = 12
+# UVM_INFO i2c_monitor.sv(38) @ 37050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 127, DIN = 12
+# UVM_INFO i2c_scoreboard.sv(40) @ 37050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 127, DIN = 12, MEM_DATA_WR = 12
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 37050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 59, DIN = 191
+# UVM_INFO i2c_driver.sv(50) @ 37050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 59, DIN = 191
+# UVM_INFO i2c_monitor.sv(38) @ 37550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 59, DIN = 191
+# UVM_INFO i2c_scoreboard.sv(40) @ 37550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 59, DIN = 191, MEM_DATA_WR = 191
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 37550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 5, DIN = 47
+# UVM_INFO i2c_driver.sv(50) @ 37550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 5, DIN = 47
+# UVM_INFO i2c_monitor.sv(38) @ 38050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 5, DIN = 47
+# UVM_INFO i2c_scoreboard.sv(40) @ 38050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 5, DIN = 47, MEM_DATA_WR = 47
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 38050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 70, DIN = 57
+# UVM_INFO i2c_driver.sv(50) @ 38050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 70, DIN = 57
+# UVM_INFO i2c_monitor.sv(38) @ 38550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 70, DIN = 57
+# UVM_INFO i2c_scoreboard.sv(40) @ 38550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 70, DIN = 57, MEM_DATA_WR = 57
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 38550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 35, DIN = 36
+# UVM_INFO i2c_driver.sv(50) @ 38550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 35, DIN = 36
+# UVM_INFO i2c_monitor.sv(38) @ 39050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 35, DIN = 36
+# UVM_INFO i2c_scoreboard.sv(40) @ 39050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 35, DIN = 36, MEM_DATA_WR = 36
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 39050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 87, DIN = 93
+# UVM_INFO i2c_driver.sv(50) @ 39050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 87, DIN = 93
+# UVM_INFO i2c_monitor.sv(38) @ 39550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 87, DIN = 93
+# UVM_INFO i2c_scoreboard.sv(40) @ 39550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 87, DIN = 93, MEM_DATA_WR = 93
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 39550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 121, DIN = 195
+# UVM_INFO i2c_driver.sv(50) @ 39550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 121, DIN = 195
+# UVM_INFO i2c_monitor.sv(38) @ 40050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 121, DIN = 195
+# UVM_INFO i2c_scoreboard.sv(40) @ 40050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 121, DIN = 195, MEM_DATA_WR = 195
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 40050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 94, DIN = 126
+# UVM_INFO i2c_driver.sv(50) @ 40050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 94, DIN = 126
+# UVM_INFO i2c_monitor.sv(38) @ 40550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 94, DIN = 126
+# UVM_INFO i2c_scoreboard.sv(40) @ 40550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 94, DIN = 126, MEM_DATA_WR = 126
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 40550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 100, DIN = 125
+# UVM_INFO i2c_driver.sv(50) @ 40550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 100, DIN = 125
+# UVM_INFO i2c_monitor.sv(38) @ 41050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 100, DIN = 125
+# UVM_INFO i2c_scoreboard.sv(40) @ 41050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 100, DIN = 125, MEM_DATA_WR = 125
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 41050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 1, DIN = 225
+# UVM_INFO i2c_driver.sv(50) @ 41050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 1, DIN = 225
+# UVM_INFO i2c_monitor.sv(38) @ 41550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 1, DIN = 225
+# UVM_INFO i2c_scoreboard.sv(40) @ 41550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 1, DIN = 225, MEM_DATA_WR = 225
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 41550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 13, DIN = 164
+# UVM_INFO i2c_driver.sv(50) @ 41550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 13, DIN = 164
+# UVM_INFO i2c_monitor.sv(38) @ 42050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 13, DIN = 164
+# UVM_INFO i2c_scoreboard.sv(40) @ 42050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 13, DIN = 164, MEM_DATA_WR = 164
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 42050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 14, DIN = 164
+# UVM_INFO i2c_driver.sv(50) @ 42050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 14, DIN = 164
+# UVM_INFO i2c_monitor.sv(38) @ 42550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 14, DIN = 164
+# UVM_INFO i2c_scoreboard.sv(40) @ 42550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 14, DIN = 164, MEM_DATA_WR = 164
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 42550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 50, DIN = 4
+# UVM_INFO i2c_driver.sv(50) @ 42550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 50, DIN = 4
+# UVM_INFO i2c_monitor.sv(38) @ 43050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 50, DIN = 4
+# UVM_INFO i2c_scoreboard.sv(40) @ 43050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 50, DIN = 4, MEM_DATA_WR = 4
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 43050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 127, DIN = 1
+# UVM_INFO i2c_driver.sv(50) @ 43050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 127, DIN = 1
+# UVM_INFO i2c_monitor.sv(38) @ 43550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 127, DIN = 1
+# UVM_INFO i2c_scoreboard.sv(40) @ 43550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 127, DIN = 1, MEM_DATA_WR = 1
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 43550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 42, DIN = 70
+# UVM_INFO i2c_driver.sv(50) @ 43550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 42, DIN = 70
+# UVM_INFO i2c_monitor.sv(38) @ 44050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 42, DIN = 70
+# UVM_INFO i2c_scoreboard.sv(40) @ 44050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 42, DIN = 70, MEM_DATA_WR = 70
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 44050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 95, DIN = 186
+# UVM_INFO i2c_driver.sv(50) @ 44050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 95, DIN = 186
+# UVM_INFO i2c_monitor.sv(38) @ 44550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 95, DIN = 186
+# UVM_INFO i2c_scoreboard.sv(40) @ 44550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 95, DIN = 186, MEM_DATA_WR = 186
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 44550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 124, DIN = 216
+# UVM_INFO i2c_driver.sv(50) @ 44550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 124, DIN = 216
+# UVM_INFO i2c_monitor.sv(38) @ 45050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 124, DIN = 216
+# UVM_INFO i2c_scoreboard.sv(40) @ 45050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 124, DIN = 216, MEM_DATA_WR = 216
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 45050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 79, DIN = 223
+# UVM_INFO i2c_driver.sv(50) @ 45050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 79, DIN = 223
+# UVM_INFO i2c_monitor.sv(38) @ 45550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 79, DIN = 223
+# UVM_INFO i2c_scoreboard.sv(40) @ 45550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 79, DIN = 223, MEM_DATA_WR = 223
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 45550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 125, DIN = 244
+# UVM_INFO i2c_driver.sv(50) @ 45550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 125, DIN = 244
+# UVM_INFO i2c_monitor.sv(38) @ 46050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 125, DIN = 244
+# UVM_INFO i2c_scoreboard.sv(40) @ 46050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 125, DIN = 244, MEM_DATA_WR = 244
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 46050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 31, DIN = 186
+# UVM_INFO i2c_driver.sv(50) @ 46050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 31, DIN = 186
+# UVM_INFO i2c_monitor.sv(38) @ 46550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 31, DIN = 186
+# UVM_INFO i2c_scoreboard.sv(40) @ 46550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 31, DIN = 186, MEM_DATA_WR = 186
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 46550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 20, DIN = 199
+# UVM_INFO i2c_driver.sv(50) @ 46550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 20, DIN = 199
+# UVM_INFO i2c_monitor.sv(38) @ 47050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 20, DIN = 199
+# UVM_INFO i2c_scoreboard.sv(40) @ 47050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 20, DIN = 199, MEM_DATA_WR = 199
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 47050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 2, DIN = 193
+# UVM_INFO i2c_driver.sv(50) @ 47050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 2, DIN = 193
+# UVM_INFO i2c_monitor.sv(38) @ 47550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 2, DIN = 193
+# UVM_INFO i2c_scoreboard.sv(40) @ 47550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 2, DIN = 193, MEM_DATA_WR = 193
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 47550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 95, DIN = 27
+# UVM_INFO i2c_driver.sv(50) @ 47550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 95, DIN = 27
+# UVM_INFO i2c_monitor.sv(38) @ 48050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 95, DIN = 27
+# UVM_INFO i2c_scoreboard.sv(40) @ 48050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 95, DIN = 27, MEM_DATA_WR = 27
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 48050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 121, DIN = 54
+# UVM_INFO i2c_driver.sv(50) @ 48050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 121, DIN = 54
+# UVM_INFO i2c_monitor.sv(38) @ 48550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 121, DIN = 54
+# UVM_INFO i2c_scoreboard.sv(40) @ 48550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 121, DIN = 54, MEM_DATA_WR = 54
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 48550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 93, DIN = 160
+# UVM_INFO i2c_driver.sv(50) @ 48550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 93, DIN = 160
+# UVM_INFO i2c_monitor.sv(38) @ 49050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 93, DIN = 160
+# UVM_INFO i2c_scoreboard.sv(40) @ 49050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 93, DIN = 160, MEM_DATA_WR = 160
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 49050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 104, DIN = 151
+# UVM_INFO i2c_driver.sv(50) @ 49050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 104, DIN = 151
+# UVM_INFO i2c_monitor.sv(38) @ 49550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 104, DIN = 151
+# UVM_INFO i2c_scoreboard.sv(40) @ 49550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 104, DIN = 151, MEM_DATA_WR = 151
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 49550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 115, DIN = 68
+# UVM_INFO i2c_driver.sv(50) @ 49550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 115, DIN = 68
+# UVM_INFO i2c_monitor.sv(38) @ 50050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 115, DIN = 68
+# UVM_INFO i2c_scoreboard.sv(40) @ 50050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 115, DIN = 68, MEM_DATA_WR = 68
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 50050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 67, DIN = 8
+# UVM_INFO i2c_driver.sv(50) @ 50050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 67, DIN = 8
+# UVM_INFO i2c_monitor.sv(38) @ 50550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 67, DIN = 8
+# UVM_INFO i2c_scoreboard.sv(40) @ 50550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 67, DIN = 8, MEM_DATA_WR = 8
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 50550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 56, DIN = 253
+# UVM_INFO i2c_driver.sv(50) @ 50550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 56, DIN = 253
+# UVM_INFO i2c_monitor.sv(38) @ 51050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 56, DIN = 253
+# UVM_INFO i2c_scoreboard.sv(40) @ 51050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 56, DIN = 253, MEM_DATA_WR = 253
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 51050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 43, DIN = 139
+# UVM_INFO i2c_driver.sv(50) @ 51050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 43, DIN = 139
+# UVM_INFO i2c_monitor.sv(38) @ 51550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 43, DIN = 139
+# UVM_INFO i2c_scoreboard.sv(40) @ 51550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 43, DIN = 139, MEM_DATA_WR = 139
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 51550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 22, DIN = 224
+# UVM_INFO i2c_driver.sv(50) @ 51550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 22, DIN = 224
+# UVM_INFO i2c_monitor.sv(38) @ 52050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 22, DIN = 224
+# UVM_INFO i2c_scoreboard.sv(40) @ 52050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 22, DIN = 224, MEM_DATA_WR = 224
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 52050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 116, DIN = 9
+# UVM_INFO i2c_driver.sv(50) @ 52050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 116, DIN = 9
+# UVM_INFO i2c_monitor.sv(38) @ 52550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 116, DIN = 9
+# UVM_INFO i2c_scoreboard.sv(40) @ 52550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 116, DIN = 9, MEM_DATA_WR = 9
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 52550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 27, DIN = 151
+# UVM_INFO i2c_driver.sv(50) @ 52550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 27, DIN = 151
+# UVM_INFO i2c_monitor.sv(38) @ 53050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 27, DIN = 151
+# UVM_INFO i2c_scoreboard.sv(40) @ 53050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 27, DIN = 151, MEM_DATA_WR = 151
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 53050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 73, DIN = 169
+# UVM_INFO i2c_driver.sv(50) @ 53050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 73, DIN = 169
+# UVM_INFO i2c_monitor.sv(38) @ 53550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 73, DIN = 169
+# UVM_INFO i2c_scoreboard.sv(40) @ 53550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 73, DIN = 169, MEM_DATA_WR = 169
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 53550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 30, DIN = 227
+# UVM_INFO i2c_driver.sv(50) @ 53550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 30, DIN = 227
+# UVM_INFO i2c_monitor.sv(38) @ 54050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 30, DIN = 227
+# UVM_INFO i2c_scoreboard.sv(40) @ 54050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 30, DIN = 227, MEM_DATA_WR = 227
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 54050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 44, DIN = 83
+# UVM_INFO i2c_driver.sv(50) @ 54050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 44, DIN = 83
+# UVM_INFO i2c_monitor.sv(38) @ 54550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 44, DIN = 83
+# UVM_INFO i2c_scoreboard.sv(40) @ 54550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 44, DIN = 83, MEM_DATA_WR = 83
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 54550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 6, DIN = 184
+# UVM_INFO i2c_driver.sv(50) @ 54550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 6, DIN = 184
+# UVM_INFO i2c_monitor.sv(38) @ 55050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 6, DIN = 184
+# UVM_INFO i2c_scoreboard.sv(40) @ 55050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 6, DIN = 184, MEM_DATA_WR = 184
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 55050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 99, DIN = 210
+# UVM_INFO i2c_driver.sv(50) @ 55050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 99, DIN = 210
+# UVM_INFO i2c_monitor.sv(38) @ 55550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 99, DIN = 210
+# UVM_INFO i2c_scoreboard.sv(40) @ 55550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 99, DIN = 210, MEM_DATA_WR = 210
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 55550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 77, DIN = 82
+# UVM_INFO i2c_driver.sv(50) @ 55550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 77, DIN = 82
+# UVM_INFO i2c_monitor.sv(38) @ 56050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 77, DIN = 82
+# UVM_INFO i2c_scoreboard.sv(40) @ 56050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 77, DIN = 82, MEM_DATA_WR = 82
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 56050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 102, DIN = 146
+# UVM_INFO i2c_driver.sv(50) @ 56050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 102, DIN = 146
+# UVM_INFO i2c_monitor.sv(38) @ 56550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 102, DIN = 146
+# UVM_INFO i2c_scoreboard.sv(40) @ 56550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 102, DIN = 146, MEM_DATA_WR = 146
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 56550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 9, DIN = 136
+# UVM_INFO i2c_driver.sv(50) @ 56550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 9, DIN = 136
+# UVM_INFO i2c_monitor.sv(38) @ 57050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 9, DIN = 136
+# UVM_INFO i2c_scoreboard.sv(40) @ 57050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 9, DIN = 136, MEM_DATA_WR = 136
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 57050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 92, DIN = 39
+# UVM_INFO i2c_driver.sv(50) @ 57050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 92, DIN = 39
+# UVM_INFO i2c_monitor.sv(38) @ 57550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 92, DIN = 39
+# UVM_INFO i2c_scoreboard.sv(40) @ 57550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 92, DIN = 39, MEM_DATA_WR = 39
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 57550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 82, DIN = 38
+# UVM_INFO i2c_driver.sv(50) @ 57550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 82, DIN = 38
+# UVM_INFO i2c_monitor.sv(38) @ 58050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 82, DIN = 38
+# UVM_INFO i2c_scoreboard.sv(40) @ 58050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 82, DIN = 38, MEM_DATA_WR = 38
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 58050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 73, DIN = 124
+# UVM_INFO i2c_driver.sv(50) @ 58050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 73, DIN = 124
+# UVM_INFO i2c_monitor.sv(38) @ 58550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 73, DIN = 124
+# UVM_INFO i2c_scoreboard.sv(40) @ 58550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 73, DIN = 124, MEM_DATA_WR = 124
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 58550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 87, DIN = 141
+# UVM_INFO i2c_driver.sv(50) @ 58550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 87, DIN = 141
+# UVM_INFO i2c_monitor.sv(38) @ 59050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 87, DIN = 141
+# UVM_INFO i2c_scoreboard.sv(40) @ 59050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 87, DIN = 141, MEM_DATA_WR = 141
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 59050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 117, DIN = 176
+# UVM_INFO i2c_driver.sv(50) @ 59050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 117, DIN = 176
+# UVM_INFO i2c_monitor.sv(38) @ 59550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 117, DIN = 176
+# UVM_INFO i2c_scoreboard.sv(40) @ 59550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 117, DIN = 176, MEM_DATA_WR = 176
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 59550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 101, DIN = 49
+# UVM_INFO i2c_driver.sv(50) @ 59550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 101, DIN = 49
+# UVM_INFO i2c_monitor.sv(38) @ 60050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 101, DIN = 49
+# UVM_INFO i2c_scoreboard.sv(40) @ 60050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 101, DIN = 49, MEM_DATA_WR = 49
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 60050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 38, DIN = 182
+# UVM_INFO i2c_driver.sv(50) @ 60050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 38, DIN = 182
+# UVM_INFO i2c_monitor.sv(38) @ 60550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 38, DIN = 182
+# UVM_INFO i2c_scoreboard.sv(40) @ 60550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 38, DIN = 182, MEM_DATA_WR = 182
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 60550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 21, DIN = 45
+# UVM_INFO i2c_driver.sv(50) @ 60550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 21, DIN = 45
+# UVM_INFO i2c_monitor.sv(38) @ 61050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 21, DIN = 45
+# UVM_INFO i2c_scoreboard.sv(40) @ 61050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 21, DIN = 45, MEM_DATA_WR = 45
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 61050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 84, DIN = 170
+# UVM_INFO i2c_driver.sv(50) @ 61050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 84, DIN = 170
+# UVM_INFO i2c_monitor.sv(38) @ 61550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 84, DIN = 170
+# UVM_INFO i2c_scoreboard.sv(40) @ 61550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 84, DIN = 170, MEM_DATA_WR = 170
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 61550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 9, DIN = 180
+# UVM_INFO i2c_driver.sv(50) @ 61550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 9, DIN = 180
+# UVM_INFO i2c_monitor.sv(38) @ 62050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 9, DIN = 180
+# UVM_INFO i2c_scoreboard.sv(40) @ 62050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 9, DIN = 180, MEM_DATA_WR = 180
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 62050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 82, DIN = 237
+# UVM_INFO i2c_driver.sv(50) @ 62050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 82, DIN = 237
+# UVM_INFO i2c_monitor.sv(38) @ 62550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 82, DIN = 237
+# UVM_INFO i2c_scoreboard.sv(40) @ 62550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 82, DIN = 237, MEM_DATA_WR = 237
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 62550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 90, DIN = 230
+# UVM_INFO i2c_driver.sv(50) @ 62550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 90, DIN = 230
+# UVM_INFO i2c_monitor.sv(38) @ 63050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 90, DIN = 230
+# UVM_INFO i2c_scoreboard.sv(40) @ 63050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 90, DIN = 230, MEM_DATA_WR = 230
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 63050: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 66, DIN = 142
+# UVM_INFO i2c_driver.sv(50) @ 63050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 66, DIN = 142
+# UVM_INFO i2c_monitor.sv(38) @ 63550: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 66, DIN = 142
+# UVM_INFO i2c_scoreboard.sv(40) @ 63550: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 66, DIN = 142, MEM_DATA_WR = 142
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(34) @ 63550: uvm_test_top.seqr.agent.seqr@@seq_write [SEQUENCE] [MODE: WRITE] ADDR = 69, DIN = 148
+# UVM_INFO i2c_driver.sv(50) @ 63550: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: WRITE] ADDR = 69, DIN = 148
+# UVM_INFO i2c_monitor.sv(38) @ 64050: uvm_test_top.seqr.agent.mon [MONITOR] DATA WRITE ADDR = 69, DIN = 148
+# UVM_INFO i2c_scoreboard.sv(40) @ 64050: uvm_test_top.seqr.scb [SCOREBOARD] DATA WRITE ADDR = 69, DIN = 148, MEM_DATA_WR = 148
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 64050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 15
+# UVM_INFO i2c_driver.sv(59) @ 64050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 15, DIN = 170
+# UVM_INFO i2c_monitor.sv(48) @ 64530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 15, DATA = 255
+# UVM_INFO i2c_scoreboard.sv(45) @ 64530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 15, DATA_READ = 255, DATA_MEM = 255
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 64530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 65
+# UVM_INFO i2c_driver.sv(59) @ 64530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 65, DIN = 69
+# UVM_INFO i2c_monitor.sv(48) @ 65050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 65, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 65050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 65, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 65050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 22
+# UVM_INFO i2c_driver.sv(59) @ 65050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 22, DIN = 91
+# UVM_INFO i2c_monitor.sv(48) @ 65530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 22, DATA = 224
+# UVM_INFO i2c_scoreboard.sv(45) @ 65530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 22, DATA_READ = 224, DATA_MEM = 224
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 65530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 82
+# UVM_INFO i2c_driver.sv(59) @ 65530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 82, DIN = 47
+# UVM_INFO i2c_monitor.sv(48) @ 66050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 82, DATA = 237
+# UVM_INFO i2c_scoreboard.sv(45) @ 66050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 82, DATA_READ = 237, DATA_MEM = 237
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 66050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 127
+# UVM_INFO i2c_driver.sv(59) @ 66050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 127, DIN = 135
+# UVM_INFO i2c_monitor.sv(48) @ 66570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 127, DATA = 1
+# UVM_INFO i2c_scoreboard.sv(45) @ 66570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 127, DATA_READ = 1, DATA_MEM = 1
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 66570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 107
+# UVM_INFO i2c_driver.sv(59) @ 66570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 107, DIN = 147
+# UVM_INFO i2c_monitor.sv(48) @ 67050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 107, DATA = 87
+# UVM_INFO i2c_scoreboard.sv(45) @ 67050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 107, DATA_READ = 87, DATA_MEM = 87
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 67050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 124
+# UVM_INFO i2c_driver.sv(59) @ 67050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 124, DIN = 203
+# UVM_INFO i2c_monitor.sv(48) @ 67530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 124, DATA = 216
+# UVM_INFO i2c_scoreboard.sv(45) @ 67530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 124, DATA_READ = 216, DATA_MEM = 216
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 67530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 44
+# UVM_INFO i2c_driver.sv(59) @ 67530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 44, DIN = 168
+# UVM_INFO i2c_monitor.sv(48) @ 68050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 44, DATA = 83
+# UVM_INFO i2c_scoreboard.sv(45) @ 68050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 44, DATA_READ = 83, DATA_MEM = 83
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 68050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 18
+# UVM_INFO i2c_driver.sv(59) @ 68050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 18, DIN = 186
+# UVM_INFO i2c_monitor.sv(48) @ 68530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 18, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 68530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 18, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 68530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 87
+# UVM_INFO i2c_driver.sv(59) @ 68530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 87, DIN = 73
+# UVM_INFO i2c_monitor.sv(48) @ 69010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 87, DATA = 141
+# UVM_INFO i2c_scoreboard.sv(45) @ 69010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 87, DATA_READ = 141, DATA_MEM = 141
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 69010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 20
+# UVM_INFO i2c_driver.sv(59) @ 69010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 20, DIN = 134
+# UVM_INFO i2c_monitor.sv(48) @ 69530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 20, DATA = 199
+# UVM_INFO i2c_scoreboard.sv(45) @ 69530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 20, DATA_READ = 199, DATA_MEM = 199
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 69530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 32
+# UVM_INFO i2c_driver.sv(59) @ 69530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 32, DIN = 116
+# UVM_INFO i2c_monitor.sv(48) @ 70050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 32, DATA = 124
+# UVM_INFO i2c_scoreboard.sv(45) @ 70050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 32, DATA_READ = 124, DATA_MEM = 124
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 70050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 99
+# UVM_INFO i2c_driver.sv(59) @ 70050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 99, DIN = 174
+# UVM_INFO i2c_monitor.sv(48) @ 70530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 99, DATA = 210
+# UVM_INFO i2c_scoreboard.sv(45) @ 70530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 99, DATA_READ = 210, DATA_MEM = 210
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 70530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 57
+# UVM_INFO i2c_driver.sv(59) @ 70530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 57, DIN = 5
+# UVM_INFO i2c_monitor.sv(48) @ 71050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 57, DATA = 216
+# UVM_INFO i2c_scoreboard.sv(45) @ 71050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 57, DATA_READ = 216, DATA_MEM = 216
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 71050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 75
+# UVM_INFO i2c_driver.sv(59) @ 71050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 75, DIN = 64
+# UVM_INFO i2c_monitor.sv(48) @ 71570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 75, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 71570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 75, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 71570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 85
+# UVM_INFO i2c_driver.sv(59) @ 71570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 85, DIN = 142
+# UVM_INFO i2c_monitor.sv(48) @ 72050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 85, DATA = 209
+# UVM_INFO i2c_scoreboard.sv(45) @ 72050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 85, DATA_READ = 209, DATA_MEM = 209
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 72050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 33
+# UVM_INFO i2c_driver.sv(59) @ 72050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 33, DIN = 53
+# UVM_INFO i2c_monitor.sv(48) @ 72570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 33, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 72570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 33, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 72570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 1
+# UVM_INFO i2c_driver.sv(59) @ 72570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 1, DIN = 16
+# UVM_INFO i2c_monitor.sv(48) @ 73050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 1, DATA = 225
+# UVM_INFO i2c_scoreboard.sv(45) @ 73050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 1, DATA_READ = 225, DATA_MEM = 225
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 73050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 81
+# UVM_INFO i2c_driver.sv(59) @ 73050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 81, DIN = 139
+# UVM_INFO i2c_monitor.sv(48) @ 73570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 81, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 73570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 81, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 73570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 31
+# UVM_INFO i2c_driver.sv(59) @ 73570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 31, DIN = 208
+# UVM_INFO i2c_monitor.sv(48) @ 74050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 31, DATA = 186
+# UVM_INFO i2c_scoreboard.sv(45) @ 74050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 31, DATA_READ = 186, DATA_MEM = 186
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 74050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 60
+# UVM_INFO i2c_driver.sv(59) @ 74050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 60, DIN = 30
+# UVM_INFO i2c_monitor.sv(48) @ 74570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 60, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 74570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 60, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 74570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 88
+# UVM_INFO i2c_driver.sv(59) @ 74570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 88, DIN = 60
+# UVM_INFO i2c_monitor.sv(48) @ 75050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 88, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 75050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 88, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 75050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 92
+# UVM_INFO i2c_driver.sv(59) @ 75050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 92, DIN = 223
+# UVM_INFO i2c_monitor.sv(48) @ 75530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 92, DATA = 39
+# UVM_INFO i2c_scoreboard.sv(45) @ 75530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 92, DATA_READ = 39, DATA_MEM = 39
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 75530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 43
+# UVM_INFO i2c_driver.sv(59) @ 75530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 43, DIN = 54
+# UVM_INFO i2c_monitor.sv(48) @ 76010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 43, DATA = 139
+# UVM_INFO i2c_scoreboard.sv(45) @ 76010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 43, DATA_READ = 139, DATA_MEM = 139
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 76010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 15
+# UVM_INFO i2c_driver.sv(59) @ 76010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 15, DIN = 75
+# UVM_INFO i2c_monitor.sv(48) @ 76530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 15, DATA = 255
+# UVM_INFO i2c_scoreboard.sv(45) @ 76530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 15, DATA_READ = 255, DATA_MEM = 255
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 76530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 43
+# UVM_INFO i2c_driver.sv(59) @ 76530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 43, DIN = 1
+# UVM_INFO i2c_monitor.sv(48) @ 77050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 43, DATA = 139
+# UVM_INFO i2c_scoreboard.sv(45) @ 77050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 43, DATA_READ = 139, DATA_MEM = 139
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 77050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 62
+# UVM_INFO i2c_driver.sv(59) @ 77050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 62, DIN = 194
+# UVM_INFO i2c_monitor.sv(48) @ 77570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 62, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 77570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 62, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 77570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 60
+# UVM_INFO i2c_driver.sv(59) @ 77570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 60, DIN = 73
+# UVM_INFO i2c_monitor.sv(48) @ 78050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 60, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 78050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 60, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 78050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 20
+# UVM_INFO i2c_driver.sv(59) @ 78050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 20, DIN = 189
+# UVM_INFO i2c_monitor.sv(48) @ 78530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 20, DATA = 199
+# UVM_INFO i2c_scoreboard.sv(45) @ 78530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 20, DATA_READ = 199, DATA_MEM = 199
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 78530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 13
+# UVM_INFO i2c_driver.sv(59) @ 78530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 13, DIN = 250
+# UVM_INFO i2c_monitor.sv(48) @ 79050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 13, DATA = 164
+# UVM_INFO i2c_scoreboard.sv(45) @ 79050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 13, DATA_READ = 164, DATA_MEM = 164
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 79050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 43
+# UVM_INFO i2c_driver.sv(59) @ 79050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 43, DIN = 72
+# UVM_INFO i2c_monitor.sv(48) @ 79570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 43, DATA = 139
+# UVM_INFO i2c_scoreboard.sv(45) @ 79570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 43, DATA_READ = 139, DATA_MEM = 139
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 79570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 0
+# UVM_INFO i2c_driver.sv(59) @ 79570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 0, DIN = 179
+# UVM_INFO i2c_monitor.sv(48) @ 80090: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 0, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 80090: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 0, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 80090: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 50
+# UVM_INFO i2c_driver.sv(59) @ 80090: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 50, DIN = 79
+# UVM_INFO i2c_monitor.sv(48) @ 80570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 50, DATA = 4
+# UVM_INFO i2c_scoreboard.sv(45) @ 80570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 50, DATA_READ = 4, DATA_MEM = 4
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 80570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 6
+# UVM_INFO i2c_driver.sv(59) @ 80570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 6, DIN = 74
+# UVM_INFO i2c_monitor.sv(48) @ 81050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 6, DATA = 184
+# UVM_INFO i2c_scoreboard.sv(45) @ 81050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 6, DATA_READ = 184, DATA_MEM = 184
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 81050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 22
+# UVM_INFO i2c_driver.sv(59) @ 81050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 22, DIN = 26
+# UVM_INFO i2c_monitor.sv(48) @ 81570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 22, DATA = 224
+# UVM_INFO i2c_scoreboard.sv(45) @ 81570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 22, DATA_READ = 224, DATA_MEM = 224
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 81570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 99
+# UVM_INFO i2c_driver.sv(59) @ 81570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 99, DIN = 102
+# UVM_INFO i2c_monitor.sv(48) @ 82090: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 99, DATA = 210
+# UVM_INFO i2c_scoreboard.sv(45) @ 82090: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 99, DATA_READ = 210, DATA_MEM = 210
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 82090: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 61
+# UVM_INFO i2c_driver.sv(59) @ 82090: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 61, DIN = 116
+# UVM_INFO i2c_monitor.sv(48) @ 82610: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 61, DATA = 151
+# UVM_INFO i2c_scoreboard.sv(45) @ 82610: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 61, DATA_READ = 151, DATA_MEM = 151
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 82610: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 79
+# UVM_INFO i2c_driver.sv(59) @ 82610: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 79, DIN = 209
+# UVM_INFO i2c_monitor.sv(48) @ 83130: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 79, DATA = 223
+# UVM_INFO i2c_scoreboard.sv(45) @ 83130: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 79, DATA_READ = 223, DATA_MEM = 223
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 83130: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 17
+# UVM_INFO i2c_driver.sv(59) @ 83130: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 17, DIN = 8
+# UVM_INFO i2c_monitor.sv(48) @ 83650: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 17, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 83650: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 17, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 83650: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 84
+# UVM_INFO i2c_driver.sv(59) @ 83650: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 84, DIN = 67
+# UVM_INFO i2c_monitor.sv(48) @ 84130: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 84, DATA = 170
+# UVM_INFO i2c_scoreboard.sv(45) @ 84130: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 84, DATA_READ = 170, DATA_MEM = 170
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 84130: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 80
+# UVM_INFO i2c_driver.sv(59) @ 84130: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 80, DIN = 28
+# UVM_INFO i2c_monitor.sv(48) @ 84650: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 80, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 84650: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 80, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 84650: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 74
+# UVM_INFO i2c_driver.sv(59) @ 84650: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 74, DIN = 127
+# UVM_INFO i2c_monitor.sv(48) @ 85130: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 74, DATA = 59
+# UVM_INFO i2c_scoreboard.sv(45) @ 85130: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 74, DATA_READ = 59, DATA_MEM = 59
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 85130: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 69
+# UVM_INFO i2c_driver.sv(59) @ 85130: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 69, DIN = 143
+# UVM_INFO i2c_monitor.sv(48) @ 85610: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 69, DATA = 148
+# UVM_INFO i2c_scoreboard.sv(45) @ 85610: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 69, DATA_READ = 148, DATA_MEM = 148
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 85610: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 69
+# UVM_INFO i2c_driver.sv(59) @ 85610: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 69, DIN = 151
+# UVM_INFO i2c_monitor.sv(48) @ 86130: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 69, DATA = 148
+# UVM_INFO i2c_scoreboard.sv(45) @ 86130: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 69, DATA_READ = 148, DATA_MEM = 148
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 86130: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 77
+# UVM_INFO i2c_driver.sv(59) @ 86130: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 77, DIN = 102
+# UVM_INFO i2c_monitor.sv(48) @ 86650: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 77, DATA = 82
+# UVM_INFO i2c_scoreboard.sv(45) @ 86650: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 77, DATA_READ = 82, DATA_MEM = 82
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 86650: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 122
+# UVM_INFO i2c_driver.sv(59) @ 86650: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 122, DIN = 220
+# UVM_INFO i2c_monitor.sv(48) @ 87130: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 122, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 87130: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 122, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 87130: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 53
+# UVM_INFO i2c_driver.sv(59) @ 87130: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 53, DIN = 142
+# UVM_INFO i2c_monitor.sv(48) @ 87610: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 53, DATA = 122
+# UVM_INFO i2c_scoreboard.sv(45) @ 87610: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 53, DATA_READ = 122, DATA_MEM = 122
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 87610: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 89
+# UVM_INFO i2c_driver.sv(59) @ 87610: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 89, DIN = 49
+# UVM_INFO i2c_monitor.sv(48) @ 88090: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 89, DATA = 128
+# UVM_INFO i2c_scoreboard.sv(45) @ 88090: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 89, DATA_READ = 128, DATA_MEM = 128
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 88090: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 88
+# UVM_INFO i2c_driver.sv(59) @ 88090: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 88, DIN = 216
+# UVM_INFO i2c_monitor.sv(48) @ 88610: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 88, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 88610: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 88, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 88610: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 55
+# UVM_INFO i2c_driver.sv(59) @ 88610: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 55, DIN = 173
+# UVM_INFO i2c_monitor.sv(48) @ 89090: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 55, DATA = 116
+# UVM_INFO i2c_scoreboard.sv(45) @ 89090: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 55, DATA_READ = 116, DATA_MEM = 116
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 89090: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 86
+# UVM_INFO i2c_driver.sv(59) @ 89090: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 86, DIN = 77
+# UVM_INFO i2c_monitor.sv(48) @ 89570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 86, DATA = 67
+# UVM_INFO i2c_scoreboard.sv(45) @ 89570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 86, DATA_READ = 67, DATA_MEM = 67
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 89570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 108
+# UVM_INFO i2c_driver.sv(59) @ 89570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 108, DIN = 53
+# UVM_INFO i2c_monitor.sv(48) @ 90050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 108, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 90050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 108, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 90050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 46
+# UVM_INFO i2c_driver.sv(59) @ 90050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 46, DIN = 202
+# UVM_INFO i2c_monitor.sv(48) @ 90530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 46, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 90530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 46, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 90530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 65
+# UVM_INFO i2c_driver.sv(59) @ 90530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 65, DIN = 117
+# UVM_INFO i2c_monitor.sv(48) @ 91010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 65, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 91010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 65, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 91010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 13
+# UVM_INFO i2c_driver.sv(59) @ 91010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 13, DIN = 119
+# UVM_INFO i2c_monitor.sv(48) @ 91490: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 13, DATA = 164
+# UVM_INFO i2c_scoreboard.sv(45) @ 91490: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 13, DATA_READ = 164, DATA_MEM = 164
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 91490: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 78
+# UVM_INFO i2c_driver.sv(59) @ 91490: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 78, DIN = 245
+# UVM_INFO i2c_monitor.sv(48) @ 92010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 78, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 92010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 78, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 92010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 91
+# UVM_INFO i2c_driver.sv(59) @ 92010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 91, DIN = 170
+# UVM_INFO i2c_monitor.sv(48) @ 92490: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 91, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 92490: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 91, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 92490: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 89
+# UVM_INFO i2c_driver.sv(59) @ 92490: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 89, DIN = 16
+# UVM_INFO i2c_monitor.sv(48) @ 92970: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 89, DATA = 128
+# UVM_INFO i2c_scoreboard.sv(45) @ 92970: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 89, DATA_READ = 128, DATA_MEM = 128
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 92970: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 9
+# UVM_INFO i2c_driver.sv(59) @ 92970: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 9, DIN = 142
+# UVM_INFO i2c_monitor.sv(48) @ 93490: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 9, DATA = 180
+# UVM_INFO i2c_scoreboard.sv(45) @ 93490: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 9, DATA_READ = 180, DATA_MEM = 180
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 93490: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 47
+# UVM_INFO i2c_driver.sv(59) @ 93490: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 47, DIN = 14
+# UVM_INFO i2c_monitor.sv(48) @ 94010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 47, DATA = 187
+# UVM_INFO i2c_scoreboard.sv(45) @ 94010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 47, DATA_READ = 187, DATA_MEM = 187
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 94010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 94
+# UVM_INFO i2c_driver.sv(59) @ 94010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 94, DIN = 252
+# UVM_INFO i2c_monitor.sv(48) @ 94530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 94, DATA = 126
+# UVM_INFO i2c_scoreboard.sv(45) @ 94530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 94, DATA_READ = 126, DATA_MEM = 126
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 94530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 70
+# UVM_INFO i2c_driver.sv(59) @ 94530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 70, DIN = 166
+# UVM_INFO i2c_monitor.sv(48) @ 95010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 70, DATA = 57
+# UVM_INFO i2c_scoreboard.sv(45) @ 95010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 70, DATA_READ = 57, DATA_MEM = 57
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 95010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 9
+# UVM_INFO i2c_driver.sv(59) @ 95010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 9, DIN = 182
+# UVM_INFO i2c_monitor.sv(48) @ 95490: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 9, DATA = 180
+# UVM_INFO i2c_scoreboard.sv(45) @ 95490: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 9, DATA_READ = 180, DATA_MEM = 180
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 95490: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 77
+# UVM_INFO i2c_driver.sv(59) @ 95490: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 77, DIN = 176
+# UVM_INFO i2c_monitor.sv(48) @ 96010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 77, DATA = 82
+# UVM_INFO i2c_scoreboard.sv(45) @ 96010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 77, DATA_READ = 82, DATA_MEM = 82
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 96010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 69
+# UVM_INFO i2c_driver.sv(59) @ 96010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 69, DIN = 146
+# UVM_INFO i2c_monitor.sv(48) @ 96490: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 69, DATA = 148
+# UVM_INFO i2c_scoreboard.sv(45) @ 96490: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 69, DATA_READ = 148, DATA_MEM = 148
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 96490: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 79
+# UVM_INFO i2c_driver.sv(59) @ 96490: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 79, DIN = 35
+# UVM_INFO i2c_monitor.sv(48) @ 97010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 79, DATA = 223
+# UVM_INFO i2c_scoreboard.sv(45) @ 97010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 79, DATA_READ = 223, DATA_MEM = 223
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 97010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 74
+# UVM_INFO i2c_driver.sv(59) @ 97010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 74, DIN = 154
+# UVM_INFO i2c_monitor.sv(48) @ 97530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 74, DATA = 59
+# UVM_INFO i2c_scoreboard.sv(45) @ 97530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 74, DATA_READ = 59, DATA_MEM = 59
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 97530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 18
+# UVM_INFO i2c_driver.sv(59) @ 97530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 18, DIN = 95
+# UVM_INFO i2c_monitor.sv(48) @ 98010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 18, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 98010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 18, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 98010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 87
+# UVM_INFO i2c_driver.sv(59) @ 98010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 87, DIN = 111
+# UVM_INFO i2c_monitor.sv(48) @ 98490: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 87, DATA = 141
+# UVM_INFO i2c_scoreboard.sv(45) @ 98490: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 87, DATA_READ = 141, DATA_MEM = 141
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 98490: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 79
+# UVM_INFO i2c_driver.sv(59) @ 98490: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 79, DIN = 137
+# UVM_INFO i2c_monitor.sv(48) @ 99010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 79, DATA = 223
+# UVM_INFO i2c_scoreboard.sv(45) @ 99010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 79, DATA_READ = 223, DATA_MEM = 223
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 99010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 51
+# UVM_INFO i2c_driver.sv(59) @ 99010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 51, DIN = 87
+# UVM_INFO i2c_monitor.sv(48) @ 99530: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 51, DATA = 10
+# UVM_INFO i2c_scoreboard.sv(45) @ 99530: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 51, DATA_READ = 10, DATA_MEM = 10
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 99530: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 53
+# UVM_INFO i2c_driver.sv(59) @ 99530: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 53, DIN = 45
+# UVM_INFO i2c_monitor.sv(48) @ 100010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 53, DATA = 122
+# UVM_INFO i2c_scoreboard.sv(45) @ 100010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 53, DATA_READ = 122, DATA_MEM = 122
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 100010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 82
+# UVM_INFO i2c_driver.sv(59) @ 100010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 82, DIN = 62
+# UVM_INFO i2c_monitor.sv(48) @ 100490: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 82, DATA = 237
+# UVM_INFO i2c_scoreboard.sv(45) @ 100490: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 82, DATA_READ = 237, DATA_MEM = 237
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 100490: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 127
+# UVM_INFO i2c_driver.sv(59) @ 100490: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 127, DIN = 159
+# UVM_INFO i2c_monitor.sv(48) @ 101010: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 127, DATA = 1
+# UVM_INFO i2c_scoreboard.sv(45) @ 101010: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 127, DATA_READ = 1, DATA_MEM = 1
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 101010: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 111
+# UVM_INFO i2c_driver.sv(59) @ 101010: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 111, DIN = 110
+# UVM_INFO i2c_monitor.sv(48) @ 101490: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 111, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 101490: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 111, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 101490: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 4
+# UVM_INFO i2c_driver.sv(59) @ 101490: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 4, DIN = 148
+# UVM_INFO i2c_monitor.sv(48) @ 101970: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 4, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 101970: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 4, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 101970: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 6
+# UVM_INFO i2c_driver.sv(59) @ 101970: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 6, DIN = 84
+# UVM_INFO i2c_monitor.sv(48) @ 102450: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 6, DATA = 184
+# UVM_INFO i2c_scoreboard.sv(45) @ 102450: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 6, DATA_READ = 184, DATA_MEM = 184
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 102450: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 94
+# UVM_INFO i2c_driver.sv(59) @ 102450: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 94, DIN = 117
+# UVM_INFO i2c_monitor.sv(48) @ 102970: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 94, DATA = 126
+# UVM_INFO i2c_scoreboard.sv(45) @ 102970: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 94, DATA_READ = 126, DATA_MEM = 126
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 102970: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 91
+# UVM_INFO i2c_driver.sv(59) @ 102970: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 91, DIN = 163
+# UVM_INFO i2c_monitor.sv(48) @ 103450: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 91, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 103450: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 91, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 103450: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 14
+# UVM_INFO i2c_driver.sv(59) @ 103450: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 14, DIN = 175
+# UVM_INFO i2c_monitor.sv(48) @ 103930: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 14, DATA = 164
+# UVM_INFO i2c_scoreboard.sv(45) @ 103930: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 14, DATA_READ = 164, DATA_MEM = 164
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 103930: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 116
+# UVM_INFO i2c_driver.sv(59) @ 103930: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 116, DIN = 83
+# UVM_INFO i2c_monitor.sv(48) @ 104450: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 116, DATA = 9
+# UVM_INFO i2c_scoreboard.sv(45) @ 104450: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 116, DATA_READ = 9, DATA_MEM = 9
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 104450: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 43
+# UVM_INFO i2c_driver.sv(59) @ 104450: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 43, DIN = 252
+# UVM_INFO i2c_monitor.sv(48) @ 104930: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 43, DATA = 139
+# UVM_INFO i2c_scoreboard.sv(45) @ 104930: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 43, DATA_READ = 139, DATA_MEM = 139
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 104930: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 108
+# UVM_INFO i2c_driver.sv(59) @ 104930: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 108, DIN = 117
+# UVM_INFO i2c_monitor.sv(48) @ 105450: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 108, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 105450: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 108, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 105450: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 114
+# UVM_INFO i2c_driver.sv(59) @ 105450: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 114, DIN = 12
+# UVM_INFO i2c_monitor.sv(48) @ 105930: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 114, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 105930: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 114, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 105930: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 40
+# UVM_INFO i2c_driver.sv(59) @ 105930: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 40, DIN = 185
+# UVM_INFO i2c_monitor.sv(48) @ 106410: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 40, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 106410: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 40, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 106410: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 85
+# UVM_INFO i2c_driver.sv(59) @ 106410: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 85, DIN = 81
+# UVM_INFO i2c_monitor.sv(48) @ 106890: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 85, DATA = 209
+# UVM_INFO i2c_scoreboard.sv(45) @ 106890: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 85, DATA_READ = 209, DATA_MEM = 209
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 106890: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 118
+# UVM_INFO i2c_driver.sv(59) @ 106890: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 118, DIN = 83
+# UVM_INFO i2c_monitor.sv(48) @ 107410: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 118, DATA = 217
+# UVM_INFO i2c_scoreboard.sv(45) @ 107410: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 118, DATA_READ = 217, DATA_MEM = 217
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 107410: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 95
+# UVM_INFO i2c_driver.sv(59) @ 107410: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 95, DIN = 53
+# UVM_INFO i2c_monitor.sv(48) @ 107930: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 95, DATA = 27
+# UVM_INFO i2c_scoreboard.sv(45) @ 107930: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 95, DATA_READ = 27, DATA_MEM = 27
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 107930: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 72
+# UVM_INFO i2c_driver.sv(59) @ 107930: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 72, DIN = 177
+# UVM_INFO i2c_monitor.sv(48) @ 108410: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 72, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 108410: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 72, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 108410: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 67
+# UVM_INFO i2c_driver.sv(59) @ 108410: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 67, DIN = 159
+# UVM_INFO i2c_monitor.sv(48) @ 108890: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 67, DATA = 8
+# UVM_INFO i2c_scoreboard.sv(45) @ 108890: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 67, DATA_READ = 8, DATA_MEM = 8
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 108890: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 37
+# UVM_INFO i2c_driver.sv(59) @ 108890: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 37, DIN = 149
+# UVM_INFO i2c_monitor.sv(48) @ 109370: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 37, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 109370: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 37, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 109370: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 49
+# UVM_INFO i2c_driver.sv(59) @ 109370: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 49, DIN = 146
+# UVM_INFO i2c_monitor.sv(48) @ 109850: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 49, DATA = 186
+# UVM_INFO i2c_scoreboard.sv(45) @ 109850: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 49, DATA_READ = 186, DATA_MEM = 186
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 109850: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 121
+# UVM_INFO i2c_driver.sv(59) @ 109850: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 121, DIN = 31
+# UVM_INFO i2c_monitor.sv(48) @ 110370: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 121, DATA = 54
+# UVM_INFO i2c_scoreboard.sv(45) @ 110370: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 121, DATA_READ = 54, DATA_MEM = 54
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 110370: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 41
+# UVM_INFO i2c_driver.sv(59) @ 110370: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 41, DIN = 152
+# UVM_INFO i2c_monitor.sv(48) @ 110850: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 41, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 110850: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 41, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 110850: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 91
+# UVM_INFO i2c_driver.sv(59) @ 110850: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 91, DIN = 249
+# UVM_INFO i2c_monitor.sv(48) @ 111330: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 91, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 111330: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 91, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 111330: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 57
+# UVM_INFO i2c_driver.sv(59) @ 111330: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 57, DIN = 201
+# UVM_INFO i2c_monitor.sv(48) @ 111810: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 57, DATA = 216
+# UVM_INFO i2c_scoreboard.sv(45) @ 111810: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 57, DATA_READ = 216, DATA_MEM = 216
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 111810: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 26
+# UVM_INFO i2c_driver.sv(59) @ 111810: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 26, DIN = 183
+# UVM_INFO i2c_monitor.sv(48) @ 112330: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 26, DATA = 172
+# UVM_INFO i2c_scoreboard.sv(45) @ 112330: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 26, DATA_READ = 172, DATA_MEM = 172
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 112330: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 119
+# UVM_INFO i2c_driver.sv(59) @ 112330: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 119, DIN = 81
+# UVM_INFO i2c_monitor.sv(48) @ 112850: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 119, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 112850: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 119, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 112850: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 81
+# UVM_INFO i2c_driver.sv(59) @ 112850: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 81, DIN = 49
+# UVM_INFO i2c_monitor.sv(48) @ 113330: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 81, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 113330: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 81, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 113330: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 46
+# UVM_INFO i2c_driver.sv(59) @ 113330: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 46, DIN = 173
+# UVM_INFO i2c_monitor.sv(48) @ 113810: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 46, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 113810: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 46, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 113810: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 92
+# UVM_INFO i2c_driver.sv(59) @ 113810: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 92, DIN = 57
+# UVM_INFO i2c_monitor.sv(48) @ 114290: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 92, DATA = 39
+# UVM_INFO i2c_scoreboard.sv(45) @ 114290: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 92, DATA_READ = 39, DATA_MEM = 39
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 114290: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 51
+# UVM_INFO i2c_driver.sv(59) @ 114290: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 51, DIN = 67
+# UVM_INFO i2c_monitor.sv(48) @ 114770: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 51, DATA = 10
+# UVM_INFO i2c_scoreboard.sv(45) @ 114770: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 51, DATA_READ = 10, DATA_MEM = 10
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 114770: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 84
+# UVM_INFO i2c_driver.sv(59) @ 114770: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 84, DIN = 20
+# UVM_INFO i2c_monitor.sv(48) @ 115250: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 84, DATA = 170
+# UVM_INFO i2c_scoreboard.sv(45) @ 115250: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 84, DATA_READ = 170, DATA_MEM = 170
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 115250: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 101
+# UVM_INFO i2c_driver.sv(59) @ 115250: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 101, DIN = 119
+# UVM_INFO i2c_monitor.sv(48) @ 115770: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 101, DATA = 49
+# UVM_INFO i2c_scoreboard.sv(45) @ 115770: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 101, DATA_READ = 49, DATA_MEM = 49
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 115770: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 79
+# UVM_INFO i2c_driver.sv(59) @ 115770: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 79, DIN = 132
+# UVM_INFO i2c_monitor.sv(48) @ 116250: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 79, DATA = 223
+# UVM_INFO i2c_scoreboard.sv(45) @ 116250: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 79, DATA_READ = 223, DATA_MEM = 223
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 116250: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 109
+# UVM_INFO i2c_driver.sv(59) @ 116250: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 109, DIN = 140
+# UVM_INFO i2c_monitor.sv(48) @ 116770: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 109, DATA = 12
+# UVM_INFO i2c_scoreboard.sv(45) @ 116770: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 109, DATA_READ = 12, DATA_MEM = 12
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 116770: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 48
+# UVM_INFO i2c_driver.sv(59) @ 116770: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 48, DIN = 71
+# UVM_INFO i2c_monitor.sv(48) @ 117250: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 48, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 117250: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 48, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 117250: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 61
+# UVM_INFO i2c_driver.sv(59) @ 117250: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 61, DIN = 101
+# UVM_INFO i2c_monitor.sv(48) @ 117730: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 61, DATA = 151
+# UVM_INFO i2c_scoreboard.sv(45) @ 117730: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 61, DATA_READ = 151, DATA_MEM = 151
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 117730: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 24
+# UVM_INFO i2c_driver.sv(59) @ 117730: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 24, DIN = 56
+# UVM_INFO i2c_monitor.sv(48) @ 118250: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 24, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 118250: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 24, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 118250: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 31
+# UVM_INFO i2c_driver.sv(59) @ 118250: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 31, DIN = 0
+# UVM_INFO i2c_monitor.sv(48) @ 118730: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 31, DATA = 186
+# UVM_INFO i2c_scoreboard.sv(45) @ 118730: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 31, DATA_READ = 186, DATA_MEM = 186
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 118730: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 5
+# UVM_INFO i2c_driver.sv(59) @ 118730: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 5, DIN = 161
+# UVM_INFO i2c_monitor.sv(48) @ 119250: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 5, DATA = 47
+# UVM_INFO i2c_scoreboard.sv(45) @ 119250: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 5, DATA_READ = 47, DATA_MEM = 47
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 119250: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 60
+# UVM_INFO i2c_driver.sv(59) @ 119250: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 60, DIN = 32
+# UVM_INFO i2c_monitor.sv(48) @ 119730: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 60, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 119730: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 60, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 119730: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 37
+# UVM_INFO i2c_driver.sv(59) @ 119730: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 37, DIN = 89
+# UVM_INFO i2c_monitor.sv(48) @ 120210: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 37, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 120210: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 37, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 120210: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 93
+# UVM_INFO i2c_driver.sv(59) @ 120210: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 93, DIN = 137
+# UVM_INFO i2c_monitor.sv(48) @ 120690: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 93, DATA = 160
+# UVM_INFO i2c_scoreboard.sv(45) @ 120690: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 93, DATA_READ = 160, DATA_MEM = 160
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 120690: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 8
+# UVM_INFO i2c_driver.sv(59) @ 120690: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 8, DIN = 59
+# UVM_INFO i2c_monitor.sv(48) @ 121210: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 8, DATA = 29
+# UVM_INFO i2c_scoreboard.sv(45) @ 121210: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 8, DATA_READ = 29, DATA_MEM = 29
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 121210: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 13
+# UVM_INFO i2c_driver.sv(59) @ 121210: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 13, DIN = 1
+# UVM_INFO i2c_monitor.sv(48) @ 121690: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 13, DATA = 164
+# UVM_INFO i2c_scoreboard.sv(45) @ 121690: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 13, DATA_READ = 164, DATA_MEM = 164
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 121690: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 105
+# UVM_INFO i2c_driver.sv(59) @ 121690: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 105, DIN = 98
+# UVM_INFO i2c_monitor.sv(48) @ 122210: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 105, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 122210: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 105, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 122210: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 65
+# UVM_INFO i2c_driver.sv(59) @ 122210: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 65, DIN = 8
+# UVM_INFO i2c_monitor.sv(48) @ 122690: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 65, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 122690: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 65, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 122690: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 97
+# UVM_INFO i2c_driver.sv(59) @ 122690: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 97, DIN = 43
+# UVM_INFO i2c_monitor.sv(48) @ 123170: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 97, DATA = 81
+# UVM_INFO i2c_scoreboard.sv(45) @ 123170: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 97, DATA_READ = 81, DATA_MEM = 81
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 123170: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 126
+# UVM_INFO i2c_driver.sv(59) @ 123170: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 126, DIN = 107
+# UVM_INFO i2c_monitor.sv(48) @ 123650: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 126, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 123650: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 126, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 123650: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 61
+# UVM_INFO i2c_driver.sv(59) @ 123650: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 61, DIN = 8
+# UVM_INFO i2c_monitor.sv(48) @ 124130: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 61, DATA = 151
+# UVM_INFO i2c_scoreboard.sv(45) @ 124130: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 61, DATA_READ = 151, DATA_MEM = 151
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 124130: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 94
+# UVM_INFO i2c_driver.sv(59) @ 124130: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 94, DIN = 160
+# UVM_INFO i2c_monitor.sv(48) @ 124650: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 94, DATA = 126
+# UVM_INFO i2c_scoreboard.sv(45) @ 124650: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 94, DATA_READ = 126, DATA_MEM = 126
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 124650: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 33
+# UVM_INFO i2c_driver.sv(59) @ 124650: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 33, DIN = 143
+# UVM_INFO i2c_monitor.sv(48) @ 125130: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 33, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 125130: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 33, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 125130: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 55
+# UVM_INFO i2c_driver.sv(59) @ 125130: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 55, DIN = 56
+# UVM_INFO i2c_monitor.sv(48) @ 125610: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 55, DATA = 116
+# UVM_INFO i2c_scoreboard.sv(45) @ 125610: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 55, DATA_READ = 116, DATA_MEM = 116
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 125610: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 0
+# UVM_INFO i2c_driver.sv(59) @ 125610: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 0, DIN = 196
+# UVM_INFO i2c_monitor.sv(48) @ 126090: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 0, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 126090: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 0, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 126090: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 36
+# UVM_INFO i2c_driver.sv(59) @ 126090: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 36, DIN = 4
+# UVM_INFO i2c_monitor.sv(48) @ 126570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 36, DATA = 0
+# UVM_INFO i2c_scoreboard.sv(45) @ 126570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 36, DATA_READ = 0, DATA_MEM = 0
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 126570: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 84
+# UVM_INFO i2c_driver.sv(59) @ 126570: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 84, DIN = 96
+# UVM_INFO i2c_monitor.sv(48) @ 127050: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 84, DATA = 170
+# UVM_INFO i2c_scoreboard.sv(45) @ 127050: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 84, DATA_READ = 170, DATA_MEM = 170
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO i2c_sequence.sv(53) @ 127050: uvm_test_top.seqr.agent.seqr@@seq_read [SEQUENCE] [MODE: READ] ADDR = 57
+# UVM_INFO i2c_driver.sv(59) @ 127050: uvm_test_top.seqr.agent.drv [DRIVER] [MODE: READ] ADDR = 57, DIN = 169
+# UVM_INFO i2c_monitor.sv(48) @ 127570: uvm_test_top.seqr.agent.mon [MONITOR] DATA READ ADDR = 57, DATA = 216
+# UVM_INFO i2c_scoreboard.sv(45) @ 127570: uvm_test_top.seqr.scb [SCOREBOARD] TEST PASSED: ADDR = 57, DATA_READ = 216, DATA_MEM = 216
+# ----------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 127570: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO : 1032
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRIVER]   257
+# [MONITOR]   257
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD]   257
+# [SEQUENCE]   257
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 127570 ns  Iteration: 62  Instance: /i2c_tb
+# End time: 12:05:16 on Apr 16,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
