@@ -21,7 +21,7 @@ Communication between the SPI Master and Slave follows the standard SPI protocol
 
 ### Block Diagram
 
-![SPI Block Diagram](./spi_mem.png)
+![SPI Block Diagram](./spi_block.png)
 
 ---
 
@@ -58,7 +58,7 @@ Communication between the SPI Master and Slave follows the standard SPI protocol
 
 ### State Diagram
 
-![SPI Master State Machine](./spi_master_state.png)
+![SPI Master State Machine](./spi_master_fsm.png)
 
 1. **IDLE**
    - Waits for `rtsn = 0` or `op_done = 1` to reset or complete.
@@ -93,7 +93,7 @@ Communication between the SPI Master and Slave follows the standard SPI protocol
 
 ### State Diagram
 
-![SPI Slave State Machine](./spi_slave_state.png)
+![SPI Slave State Machine](./spi_slave_fsm.png)
 
 1. **IDLE**
    - Waits for chip select `cs = 0`.
