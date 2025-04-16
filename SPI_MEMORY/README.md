@@ -1,4 +1,4 @@
-# SPI System Technical Specification (README)
+# SPI System Technical Specification
 
 **Version:** 1.0  
 **Date:** April 14, 2025  
