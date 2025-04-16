@@ -1,0 +1,188 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ChampionT/DV/UVM_PROJECT/SPI_MEMORY/VERIFY
+T_opt
+!s110 1744824871
+VFd>Cbeb[EB:Edf>_@jVj;1
+04 6 4 work spi_tb fast 0
+=1-5081407fae39-67ffea26-3ad-482c
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7c;67
+Yspi_if
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1744824867
+!i10b 1
+!s100 F8egz1Uolz77gkYJ5bDGX3
+IRBU=Zzd:eJ2BJNm8Z]QIQ2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s105 spi_interface_sv_unit
+S1
+R0
+w1744812704
+8spi_interface.sv
+Fspi_interface.sv
+L0 1
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1744824867.000000
+Z7 !s107 spi_test.sv|spi_env.sv|spi_agent.sv|spi_scoreboard.sv|spi_monitor.sv|spi_driver.sv|spi_sequencer.sv|spi_sequence.sv|spi_sequence_item.sv|spi_config.sv|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|spi_tb.sv|spi_package.sv|spi_interface.sv|../RTL/spi_top.sv|../RTL/spi_slave.sv|../RTL/spi_master.sv|
+Z8 !s90 -f|filelist.f|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vspi_master
+R2
+R3
+!i10b 1
+!s100 ^>h1`DiFEcgB`<oA5OM>z1
+ImNaQ`3:blWGnHRiV67GZ60
+R4
+!s105 spi_master_sv_unit
+S1
+R0
+w1744816011
+8../RTL/spi_master.sv
+F../RTL/spi_master.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+Xspi_pkg
+!s115 spi_if
+R2
+Z10 DXx6 mtiUvm 7 uvm_pkg 0 22 3zPkj@YUcM=M^m3zCLh<H1
+Z11 !s110 1744824868
+!i10b 1
+!s100 Qo7h9k;G==813bC66L:Tz0
+IXOO55oXkPZFfLKJ1nJc311
+VXOO55oXkPZFfLKJ1nJc311
+S1
+R0
+w1744824835
+8spi_package.sv
+Fspi_package.sv
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+FC:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+Fspi_config.sv
+Fspi_sequence_item.sv
+Fspi_sequence.sv
+Fspi_sequencer.sv
+Fspi_driver.sv
+Fspi_monitor.sv
+Fspi_scoreboard.sv
+Fspi_agent.sv
+Fspi_env.sv
+Fspi_test.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vspi_slave
+R2
+R3
+!i10b 1
+!s100 AHT1OJch937aFIE11S[]z1
+IP8>>ZBF5mX=^oBK=GJ2U>2
+R4
+!s105 spi_slave_sv_unit
+S1
+R0
+w1744813592
+8../RTL/spi_slave.sv
+F../RTL/spi_slave.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vspi_tb
+R2
+R10
+DXx4 work 7 spi_pkg 0 22 XOO55oXkPZFfLKJ1nJc311
+R11
+!i10b 1
+!s100 diGJgWm^d[PjQ]cO1gFVQ0
+I6@SZXHIe<[n2ULPFXT]Nn0
+R4
+!s105 spi_tb_sv_unit
+S1
+R0
+w1744823155
+8spi_tb.sv
+Fspi_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vspi_top
+R2
+R3
+!i10b 1
+!s100 1k1_^:gdk><kK>;5UzL;R2
+IT;QS2jO_mmlB`j>FL=_E[3
+R4
+!s105 spi_top_sv_unit
+S1
+R0
+w1744813629
+8../RTL/spi_top.sv
+F../RTL/spi_top.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

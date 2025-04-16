@@ -1,0 +1,159 @@
+# do run.do
+# vsim -voptargs=""+acc"" work.spi_tb 
+# Start time: 00:34:30 on Apr 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.spi_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.spi_pkg(fast)
+# Loading work.spi_tb(fast)
+# Loading work.spi_if(fast)
+# Loading work.spi_top(fast)
+# Loading work.spi_master(fast)
+# Loading work.spi_slave(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test spi_test...
+# ** Warning: (vsim-PLI-3110) $dumpfile : This task can be called only once. Please use $fdumpfile()
+# for multiple files.
+#    Time: 0 ns  Iteration: 0  Process: /spi_tb/#INITIAL#29 File: spi_tb.sv Line: 30
+# UVM_INFO spi_driver.sv(30) @ 0: uvm_test_top.env.agent.drv [DRIVER] SYSTEM RESET
+# UVM_INFO spi_monitor.sv(27) @ 10: uvm_test_top.env.agent.mon [MONITOR] SYDTEM RESET DETECTED
+# UVM_INFO spi_scoreboard.sv(62) @ 10: uvm_test_top.env.scb [SCOREBOARD] SYSTEM RESET DETECTED
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 30: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 3, DIN = 233
+# UVM_INFO spi_monitor.sv(36) @ 470: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 3, DIN = 233 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 470: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 3, DIN = 233, ARR_WRITE = 233
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 490: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 4, DIN = 147
+# UVM_INFO spi_monitor.sv(36) @ 930: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 4, DIN = 147 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 930: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 4, DIN = 147, ARR_WRITE = 147
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 950: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 0, DIN = 12
+# UVM_INFO spi_monitor.sv(36) @ 1390: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 0, DIN = 12 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 1390: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 0, DIN = 12, ARR_WRITE = 12
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 1410: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 8, DIN = 19
+# UVM_INFO spi_monitor.sv(36) @ 1850: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 8, DIN = 19 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 1850: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 8, DIN = 19, ARR_WRITE = 19
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 1870: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 6, DIN = 61
+# UVM_INFO spi_monitor.sv(36) @ 2310: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 6, DIN = 61 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 2310: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 6, DIN = 61, ARR_WRITE = 61
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 2330: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 6, DIN = 196
+# UVM_INFO spi_monitor.sv(36) @ 2770: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 6, DIN = 196 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 2770: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 6, DIN = 196, ARR_WRITE = 196
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 2790: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 2, DIN = 72
+# UVM_INFO spi_monitor.sv(36) @ 3230: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 2, DIN = 72 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 3230: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 2, DIN = 72, ARR_WRITE = 72
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 3250: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 10, DIN = 193
+# UVM_INFO spi_monitor.sv(36) @ 3690: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 10, DIN = 193 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 3690: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 10, DIN = 193, ARR_WRITE = 193
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 3710: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 0, DIN = 219
+# UVM_INFO spi_monitor.sv(36) @ 4150: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 0, DIN = 219 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 4150: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 0, DIN = 219, ARR_WRITE = 219
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(47) @ 4170: uvm_test_top.env.agent.drv [DRIVER] [MODE: WRITE]: ADDR = 4, DIN = 162
+# UVM_INFO spi_monitor.sv(36) @ 4610: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 4, DIN = 162 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 4610: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 4, DIN = 162, ARR_WRITE = 162
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 4650: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 2
+# UVM_INFO spi_monitor.sv(36) @ 5090: uvm_test_top.env.agent.mon [MONITOR] DATA WRITE ADDR = 2, DIN = 221 ERROR = 0
+# UVM_INFO spi_scoreboard.sv(70) @ 5090: uvm_test_top.env.scb [SCOREBOARD] DATA WRITE ADDR = 2, DIN = 221, ARR_WRITE = 221
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 5110: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 4
+# UVM_INFO spi_monitor.sv(45) @ 5570: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 4, DOUT = 162, ERROR = 0
+# UVM_INFO spi_scoreboard.sv(80) @ 5570: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED: ADDR = 4, DOUT = 162
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 5590: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 7
+# UVM_INFO spi_monitor.sv(45) @ 6050: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 7, DOUT = 0, ERROR = 0
+# UVM_INFO spi_scoreboard.sv(80) @ 6050: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED: ADDR = 7, DOUT = 0
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 6070: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 0
+# UVM_INFO spi_monitor.sv(45) @ 6530: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 0, DOUT = 219, ERROR = 0
+# UVM_INFO spi_scoreboard.sv(80) @ 6530: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED: ADDR = 0, DOUT = 219
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 6550: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 3
+# UVM_INFO spi_monitor.sv(45) @ 7010: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 3, DOUT = 233, ERROR = 0
+# UVM_INFO spi_scoreboard.sv(80) @ 7010: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED: ADDR = 3, DOUT = 233
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 7030: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 2
+# UVM_INFO spi_monitor.sv(45) @ 7490: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 2, DOUT = 72, ERROR = 0
+# UVM_ERROR spi_scoreboard.sv(83) @ 7490: uvm_test_top.env.scb [SCOREBOARD] TEST FAILED: ADDR = 2, DOUT = 72 DATA_READ_ARR = 221
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 7510: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 4
+# UVM_INFO spi_monitor.sv(45) @ 7970: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 4, DOUT = 162, ERROR = 0
+# UVM_INFO spi_scoreboard.sv(80) @ 7970: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED: ADDR = 4, DOUT = 162
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 7990: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 2
+# UVM_INFO spi_monitor.sv(45) @ 8450: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 2, DOUT = 72, ERROR = 0
+# UVM_ERROR spi_scoreboard.sv(83) @ 8450: uvm_test_top.env.scb [SCOREBOARD] TEST FAILED: ADDR = 2, DOUT = 72 DATA_READ_ARR = 221
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 8470: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 2
+# UVM_INFO spi_monitor.sv(45) @ 8930: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 2, DOUT = 72, ERROR = 0
+# UVM_ERROR spi_scoreboard.sv(83) @ 8930: uvm_test_top.env.scb [SCOREBOARD] TEST FAILED: ADDR = 2, DOUT = 72 DATA_READ_ARR = 221
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO spi_driver.sv(56) @ 8950: uvm_test_top.env.agent.drv [DRIVER] [MODE: READ] ADDR = 10
+# UVM_INFO spi_monitor.sv(45) @ 9410: uvm_test_top.env.agent.mon [MONITOR] DATA READ ADDR = 10, DOUT = 193, ERROR = 0
+# UVM_INFO spi_scoreboard.sv(80) @ 9410: uvm_test_top.env.scb [SCOREBOARD] TEST PASSED: ADDR = 10, DOUT = 193
+# -------------------------------------------------------------------------------------------------------------------------------------------
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 9430: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   64
+# UVM_WARNING :    0
+# UVM_ERROR :    3
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRIVER]    21
+# [MONITOR]    21
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD]    21
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 9430 ns  Iteration: 54  Instance: /spi_tb
+# End time: 00:34:33 on Apr 17,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1
